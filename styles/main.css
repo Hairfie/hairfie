@@ -6435,6 +6435,21 @@ ul {
 #content .address-bloc h4 a:hover {
   text-decoration: none;
 }
+#content .promo {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-left: 15px solid #f39c12;
+  padding-left: 15px;
+}
+#content .promo h4 {
+  font-size: 1.6em;
+  color: #f39c12;
+  font-weight: 400;
+}
+#content .promo p {
+  font-size: 1.4em;
+  color: #595959;
+}
 .stars {
   height: 3.9em;
   padding-left: 0;
@@ -7887,21 +7902,6 @@ section.home-footer .row > div p {
 .salon#content section.salon-content section .table-price div p span {
   text-decoration: underline;
 }
-.salon#content section.salon-content section .promo {
-  padding-top: 0;
-  padding-bottom: 0;
-  border-left: 15px solid #f39c12;
-  padding-left: 15px;
-}
-.salon#content section.salon-content section .promo h4 {
-  font-size: 1.6em;
-  color: #f39c12;
-  font-weight: 400;
-}
-.salon#content section.salon-content section .promo p {
-  font-size: 1.4em;
-  color: #595959;
-}
 .salon#content section.salon-content section .map {
   height: 247px;
   width: auto;
@@ -8316,5 +8316,38 @@ section.home-footer .row > div p {
   width: auto;
   min-width: 100%;
   margin: 0 auto;
+}
+#content.reservation .sidebar .salon-bloc .address-bloc {
+  margin-top: 20px;
+}
+#content.reservation .sidebar .promo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+#content.reservation .sidebar .promo p {
+  color: #f39c12;
+}
+#content.reservation .sidebar div:last-child p {
+  font-weight: 200;
+  font-size: 1.4em;
+  color: #848b95;
+  line-height: 20px;
+}
+#content.reservation .sidebar div:last-child div {
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+}
+#content.reservation .sidebar div:last-child div h3 {
+  color: #848b95;
+  font-size: 1.6em;
+  margin: 0;
+}
+#content.reservation .sidebar div:last-child div ul {
+  margin-top: 10px;
+}
+#content.reservation .sidebar div:last-child div ul li {
+  font-size: 1.6em;
+  padding-left: 15px;
 }
 /*# sourceMappingURL=/styles/main.css.map */
