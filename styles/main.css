@@ -6115,13 +6115,14 @@ span.arrow-right {
   text-decoration: none;
 }
 .cal caption {
-  display: block;
   line-height: 3.2em;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 2.1em;
   color: white;
   text-align: center;
+  letter-spacing: 2px;
+  display: block;
   background: #343434;
   position: relative;
 }
@@ -6217,11 +6218,11 @@ span.arrow-right {
   font-weight: 700;
   border-top: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
 }
 .cal td a {
   clear: both;
@@ -6244,15 +6245,24 @@ span.arrow-right {
 }
 .cal td.active a {
   color: white;
-  border-bottom: 2px solid white;
+  position: relative;
+}
+.cal td.active a:after {
+  content: " ";
+  height: 2px;
+  width: 70%;
+  background-color: white;
+  position: absoltue;
+  bottom: 5px;
+  left: 15%;
 }
 .cal td:hover {
   background-color: #e5e5e5;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
 }
 .cal td.active:first-child a,
 .cal td:first-child a:active {
@@ -8342,6 +8352,7 @@ section.home-footer .row > div p {
   color: #848b95;
   font-size: 1.6em;
   margin: 0;
+  font-weight: 600;
 }
 #content.reservation .sidebar div:last-child div ul {
   margin-top: 10px;
@@ -8349,5 +8360,49 @@ section.home-footer .row > div p {
 #content.reservation .sidebar div:last-child div ul li {
   font-size: 1.6em;
   padding-left: 15px;
+}
+#content.reservation .main-content {
+  padding-left: 30px;
+}
+#content.reservation .main-content .legend {
+  color: #848b95;
+  font-weight: 400;
+  font-size: 1.231em;
+}
+#content.reservation .main-content .legend p {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#content.reservation .main-content .legend p span {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: #f39c12;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -2px;
+  border-radius: 1px;
+}
+#content.reservation .main-content .legend p:nth-child(2) {
+  line-height: 25px;
+}
+#content.reservation .main-content .row > div h2 {
+  font-size: 2.1em;
+  font-weight: 400;
+  color: #848b95;
+  margin: 20px 0;
+  text-decoration: underline;
+}
+#content.reservation .main-content .row > div table td {
+  height: 50px;
+}
+#content.reservation .main-content .row > div table td a {
+  width: 100%;
+  height: 100%;
+  line-height: 300%;
+  margin: 0;
+}
+#content.reservation .main-content .row > div:nth-child(2) {
+  padding-left: 62px;
 }
 /*# sourceMappingURL=/styles/main.css.map */

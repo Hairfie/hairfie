@@ -2,6 +2,7 @@
 	    P A G E  R E S A 
 ////////////////////////////////*/
 #content.reservation {
+	@font-color:#848b95;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	.sidebar {
@@ -32,16 +33,17 @@
 			p {
 				font-weight: @light;
 				font-size: 1.4em;
-				color: #848b95;
+				color: @font-color;
 				line-height: 20px;
 			}
 			div {
 				padding: 20px;
 				border:1px solid #c9c9c9;
 				h3 {
-					color: #848b95;
+					color: @font-color;
 					font-size: 1.6em;
 					margin: 0;
+					font-weight: @semiBold;
 				}
 				ul {
 					margin-top: 10px;
@@ -50,6 +52,61 @@
 						padding-left: 15px;
 					}
 				}
+			}
+		}
+	}
+	.main-content {
+		padding-left: 30px;
+		.legend {
+			color: @font-color;
+			font-weight: @regular;
+			font-size: 1.231em;
+			p {
+				margin-bottom: 20px;
+				letter-spacing: 1px;
+				span {
+					width: 25px;height: 25px;
+					display: inline-block;
+					background: @promo-color;
+					margin-right: 5px;
+					vertical-align: middle;
+					margin-top: -2px;
+					border-radius: 1px;
+				}
+				&:nth-child(2) {
+					line-height: 25px;
+				}
+			}
+		}
+		.row {
+			> div {
+				h2 {
+					font-size: 2.1em;
+					font-weight: @regular;
+					color: @font-color;
+					margin: 20px 0;
+					text-decoration: underline;
+				}
+				table {
+					caption {
+						// width: ~"calc(100% + 34px)";
+					}
+					td {
+						height: 50px;
+						a {
+							width: 100%; height: 100%;
+  							line-height: 300%;
+							margin: 0;
+						}
+					}
+				}
+			}
+			> div:first-child {
+				h2 {
+				}
+			}
+			> div:nth-child(2) {
+				padding-left: 62px;
 			}
 		}
 	}

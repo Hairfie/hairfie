@@ -22,13 +22,15 @@
   a { text-decoration: none; }
 
   caption {
-    display: block;
     line-height: 3.2em;
     font-family: @font-second;
     font-weight: @latoBold;
     font-size: 2.1em;
     color: white;
     text-align: center;
+    letter-spacing: 2px;
+
+    display: block;
     background: #343434;
     position: relative;
     
@@ -113,7 +115,7 @@
     font-weight: @latoBold;
     border-top: 2px solid @border-color;
     border-left: 2px solid @border-color;
-    .transition(all 0.2s ease-in-out);
+    .transition(all 0.1s ease-in-out);
 
     a {
       clear: both;
@@ -134,12 +136,21 @@
       line-height: 2.2em;
       a {
         color: white;
-        border-bottom: 2px solid white;
+        // border-bottom: 2px solid white;
+        position: relative;
+        &:after {
+          content: " ";
+          height: 2px; width: 70%;
+          background-color: white;
+          
+          position: absoltue;
+          bottom: 5px; left: 15%;
+        }
       }
     }
     &:hover {
       background-color: @border-color;
-      .transition(all 0.2s ease-in-out);
+      .transition(all 0.1s ease-in-out);
     }
     &.active:first-child a, &:first-child a:active { border-left: 0; margin-left: 0; }
     &.active:last-child a, &:last-child a:active { border-right: 0; margin-right: 0; }
