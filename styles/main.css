@@ -6270,7 +6270,7 @@ span.arrow-right {
   margin-bottom: 0;
 }
 /*////////////////////////////////
-	   M A I N  S T Y L E 
+	 G E N E R A L  S T Y L E 
 ////////////////////////////////*/
 body {
   font-size: 1em;
@@ -6412,6 +6412,28 @@ ul {
   left: 0;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+}
+#content .address-bloc a {
+  color: #595959;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#content .address-bloc h2,
+#content .address-bloc h3,
+#content .address-bloc h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#content .address-bloc h2 a,
+#content .address-bloc h3 a,
+#content .address-bloc h4 a {
+  letter-spacing: 2px;
+}
+#content .address-bloc h2 a:hover,
+#content .address-bloc h3 a:hover,
+#content .address-bloc h4 a:hover {
+  text-decoration: none;
 }
 .stars {
   height: 3.9em;
@@ -6945,7 +6967,7 @@ footer p {
   padding: 20px 0 30px;
 }
 /*////////////////////////////////
-	   P A G E  S T Y L E
+	   P A G E  H O M E
 ////////////////////////////////*/
 .landing {
   height: 610px;
@@ -7463,31 +7485,12 @@ section.home-footer .row > div p {
 #content.search .main-content .tab-pane section .inline-promo .icon-promo {
   margin-right: 10px;
 }
-#content.search .main-content .tab-pane section h3 {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+#content.search .main-content .tab-pane section div.address-bloc h3 {
   font-size: 2.1em;
   margin: 0 0 3px;
 }
-#content.search .main-content .tab-pane section h3 a {
-  color: #595959;
-}
-#content.search .main-content .tab-pane section h3 a:hover,
-#content.search .main-content .tab-pane section h3 a:visited,
-#content.search .main-content .tab-pane section h3 a:active {
-  color: #595959;
-  text-decoration: none;
-}
-#content.search .main-content .tab-pane section .address {
-  color: #595959;
-  font-size: 1.6em;
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-#content.search .main-content .tab-pane section .address:hover {
-  color: #595959;
-  text-decoration: underline;
+#content.search .main-content .tab-pane section div.address-bloc a:nth-child(2) {
+  font-size: 1.4em;
 }
 #content.search .main-content .tab-pane section .btn-red {
   text-transform: uppercase;
@@ -8078,6 +8081,9 @@ section.home-footer .row > div p {
   color: #595959;
   border-color: #595959;
 }
+/*////////////////////////////////
+      P A G E  H A I R F I E
+////////////////////////////////*/
 .hairfie-singleView#content {
   min-height: calc(100vh - 60px);
   height: 100%;
@@ -8138,29 +8144,22 @@ section.home-footer .row > div p {
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child {
   padding-left: 0;
 }
-.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child .col-xs-3 {
+.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child > div:first-child {
   max-height: 95px;
 }
-.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child .col-xs-3 a {
+.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child > div:first-child a {
   display: inline-block;
   width: 100%;
   height: auto;
   max-height: 95px;
   overflow: hidden;
 }
-.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child .col-xs-3 a img {
+.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos > div:first-child > div:first-child a img {
   width: 100%;
   height: auto;
 }
-.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos a {
-  color: #595959;
-}
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos h2 {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
   font-size: 1.5em;
-  margin-bottom: 0;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos p {
   letter-spacing: 1px;
@@ -8195,6 +8194,7 @@ section.home-footer .row > div p {
   float: none;
   text-decoration: none;
   font-size: 0.786em;
+  color: #595959;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos .likes a:after {
   content: " ";
@@ -8293,5 +8293,28 @@ section.home-footer .row > div p {
   padding: 3px;
   padding-top: 0;
   padding-left: 0;
+}
+/*////////////////////////////////
+	    P A G E  R E S A 
+////////////////////////////////*/
+#content.reservation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#content.reservation .sidebar {
+  background: white;
+  padding: 20px;
+}
+#content.reservation .sidebar .salon-bloc a:first-child {
+  display: block;
+  width: 100%;
+  max-height: 185px;
+  overflow: hidden;
+}
+#content.reservation .sidebar .salon-bloc a:first-child img {
+  max-height: 185px;
+  width: auto;
+  min-width: 100%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=/styles/main.css.map */
