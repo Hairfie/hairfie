@@ -6252,7 +6252,7 @@ span.arrow-right {
   height: 2px;
   width: 70%;
   background-color: white;
-  position: absoltue;
+  position: absolute;
   bottom: 5px;
   left: 15%;
 }
@@ -8404,5 +8404,49 @@ section.home-footer .row > div p {
 }
 #content.reservation .main-content .row > div:nth-child(2) {
   padding-left: 62px;
+  padding-right: 0;
+}
+#content.reservation .main-content .row > div:nth-child(2) table {
+  width: 100%;
+}
+#content.reservation .main-content .row > div:nth-child(2) table tbody {
+  display: block;
+  margin-right: -10px;
+  border: none;
+}
+#content.reservation .main-content .row > div:nth-child(2) table td {
+  height: 54px;
+  width: 74px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  border: 1px solid #e9e9e9;
+  border-radius: 2px;
+  text-align: center;
+  margin: 3px;
+}
+#content.reservation .main-content .row > div:nth-child(2) table td a {
+  position: relative;
+  line-height: 1.2;
+}
+#content.reservation .main-content .row > div:nth-child(2) table td p {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  font-size: 1em;
+}
+#content.reservation .main-content .row > div:nth-child(2) table td .promo-day {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  font-size: .938em;
+  color: #f39c12;
+}
+#content.reservation .main-content .row > div:nth-child(2) table td.disabled {
+  background: #efeff0;
+  border-color: #efeff0;
+  cursor: not-allowed;
+  opacity: .7;
 }
 /*# sourceMappingURL=/styles/main.css.map */
