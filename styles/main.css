@@ -6216,6 +6216,7 @@ span.arrow-right {
 .cal td {
   font-size: 1.6em;
   font-weight: 700;
+  height: 50px;
   border-top: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
   transition: all 0.1s ease-in-out;
@@ -6228,10 +6229,21 @@ span.arrow-right {
   clear: both;
   display: block;
   position: relative;
-  width: 20px;
-  line-height: 28px;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
   color: #666;
   margin: 0 auto;
+}
+.cal td a .promo-day {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  font-size: .938em;
+  height: .938em;
+  line-height: .938em;
+  color: #f39c12;
 }
 .cal td.off {
   background: #f3f3f3;
@@ -6396,7 +6408,7 @@ ul {
   color: #595959;
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: 1.6em;
+  font-size: 1.2em;
   text-transform: uppercase;
   padding-top: 40px;
   position: relative;
@@ -7390,9 +7402,6 @@ section.home-footer .row > div p {
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
-#content.search .main-content .nav li a {
-  font-size: 1.2em;
-}
 #content.search .main-content .nav li:first-child .icon-nav {
   background: url(../images/icon-search-nav1.png) no-repeat center center;
 }
@@ -7724,9 +7733,30 @@ section.home-footer .row > div p {
 	   P A G E  S A L O N 
 ////////////////////////////////*/
 .carousel-inner .item {
-  min-height: 470px;
+  height: 470px;
   background: url(../images/placeholder-salon-img.jpg) no-repeat center center;
   background-size: cover;
+}
+.carousel-inner .item .outer-img {
+  position: relative;
+  width: 100%;
+  height: 470px;
+}
+.carousel-inner .item .outer-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .carousel-inner .item .outer-img img {
+    width: auto;
+    height: 100%;
+  }
 }
 .salon#content .main-content {
   min-height: 100vh;
@@ -7949,6 +7979,9 @@ section.home-footer .row > div p {
   top: 0;
   background: #f4f4f4;
   z-index: -1;
+}
+.salon#content .sidebar .calendar {
+  margin-bottom: 10px;
 }
 .salon#content .sidebar .phone .btn-red {
   position: relative;
@@ -8393,14 +8426,8 @@ section.home-footer .row > div p {
   margin: 20px 0;
   text-decoration: underline;
 }
-#content.reservation .main-content .row > div table td {
-  height: 50px;
-}
-#content.reservation .main-content .row > div table td a {
-  width: 100%;
-  height: 100%;
-  line-height: 300%;
-  margin: 0;
+#content.reservation .main-content .row > div td {
+  width: 50px;
 }
 #content.reservation .main-content .row > div:nth-child(2) {
   padding-left: 62px;
@@ -8434,14 +8461,6 @@ section.home-footer .row > div p {
   top: 6px;
   width: 100%;
   font-size: 1em;
-}
-#content.reservation .main-content .row > div:nth-child(2) table td .promo-day {
-  width: 100%;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  font-size: .938em;
-  color: #f39c12;
 }
 #content.reservation .main-content .row > div:nth-child(2) table td.disabled {
   background: #efeff0;

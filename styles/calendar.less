@@ -113,6 +113,7 @@
   td {
     font-size: 1.6em;
     font-weight: @latoBold;
+    height: 50px;
     border-top: 2px solid @border-color;
     border-left: 2px solid @border-color;
     .transition(all 0.1s ease-in-out);
@@ -121,10 +122,19 @@
       clear: both;
       display: block;
       position: relative;
-      width: 20px;
-      line-height: 28px;
+      width:100%; height: 100%;
+      line-height: 50px;
       color: #666;
       margin: 0 auto;
+      .promo-day {
+        width: 100%;
+        position: absolute;
+        bottom: 2px; left: 0;
+        font-size: .938em;
+        height: .938em;
+        line-height: .938em;
+        color: @promo-color;
+      }
     }
 
     &.off { background: #f3f3f3; }

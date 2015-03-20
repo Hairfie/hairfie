@@ -2,9 +2,29 @@
 	   P A G E  S A L O N 
 ////////////////////////////////*/
 .carousel-inner .item {
-	min-height: 470px;
+	height: 470px;
 	background: url(../images/placeholder-salon-img.jpg) no-repeat center center;
 	background-size: cover;
+	// img {
+	// 	width: auto;
+	// 	min-height: 100%;
+	// 	display: block;
+	// }
+	.outer-img {
+		position: relative;
+		width: 100%;height: 470px;
+		img {
+			position: absolute;
+			top: 0;left: 0;bottom: 0;right: 0;
+			margin: auto;
+			width: 100%;
+			height: auto;
+			@media screen and (max-width: @screen-xs-max) {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
 }
 .salon#content {
 	.main-content {
@@ -204,7 +224,9 @@
 	.sidebar {
 		margin-top: -90px;
 		.fullWidthBg(@bg3);
-		
+		.calendar {
+			margin-bottom: 10px;
+		}
 		.phone {
 			.btn-red {
 				position: relative;
