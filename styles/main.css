@@ -7291,9 +7291,6 @@ section.home-section .btn.home-cta {
   padding: 0;
   padding-right: 15px;
 }
-#home section:first-child .row .col-sm-4:nth-child(3) {
-  padding-right: 0px;
-}
 @media screen and (max-width: 768px) {
   #home section:first-child .row .col-sm-4:nth-child(3) {
     padding-right: 15px !important;
@@ -7379,12 +7376,40 @@ section.home-section .btn.home-cta {
   line-height: 1;
   float: none;
 }
-#home section:nth-child(3) .row + .row {
-  margin: 0px;
-  padding: 0;
+#home section:nth-child(3) .small-hairfies > div {
+  margin-left: -15px;
+  margin-right: -15px;
 }
-#home section:nth-child(3) .col-sm-3 {
+#home section:nth-child(3) .small-hairfies > div > div {
+  max-width: 265px;
+  max-height: 265px;
   padding: 0;
+  margin: 0 10px 10px 0;
+}
+#home section:nth-child(3) .small-hairfies > div > div figcaption a:first-child {
+  margin-top: 80%;
+}
+#home section:nth-child(3) .big {
+  padding-left: 0;
+  max-height: 540px;
+}
+#home section:nth-child(3) .big figure {
+  height: 100%;
+  max-height: 540px;
+}
+#home section:nth-child(3) .big figure figcaption {
+  font-size: 3.3em;
+}
+#home section:nth-child(3) .big figure figcaption a:first-child {
+  margin-top: 80%;
+}
+#home section:nth-child(3) .big figure figcaption a {
+  margin-left: 20px;
+}
+#home section:nth-child(3) .big figure figcaption .pricetag {
+  width: 85px;
+  height: 85px;
+  line-height: 55px;
 }
 #home section:nth-child(3) figure {
   cursor: pointer;
