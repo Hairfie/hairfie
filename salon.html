@@ -161,7 +161,7 @@
                 </div>
                 <!-- Tabs -->
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="informations">
+                  <div role="tabpanel" class="tab-pane fade in active" id="informations">
                       <section>
                         <h3>Nos Coiffeurs</h3>
                         <div class="row">
@@ -246,7 +246,7 @@
                         <p>Bien installé au coeur du 16ème arrondissement, le salon de beauté Mario Lopes est incontournable ! Il se situe au milieu de l'Avenue Mozart.</p>
                       </section>
                   </div>
-                  <div role="tabpanel" class="tab-pane" id="avis">
+                  <div role="tabpanel" class="tab-pane fade" id="avis">
                       <section class='row'> 
                         <div class="comment-group">
                           <a href="#" class='user-profil col-xs-1'><img src="images/placeholder-user-pp.jpg" alt="#"></a>
@@ -306,7 +306,7 @@
                         </div>
                       </section>
                   </div>
-                  <div role="tabpanel" class="tab-pane" id="hairfies">
+                  <div role="tabpanel" class="tab-pane fade" id="hairfies">
                       <section>
                         <h3>Nos Hairfies</h3>
                         <div class="salon-hairfies hairfies">
@@ -591,8 +591,9 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.min.js"></script>
-        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
         <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
         <script src="scripts/main.js"></script>
@@ -602,6 +603,15 @@
     <script type='text/javascript'>
       $(document).ready(function(){
         $('#carousel-salon').carousel();
+        $('#a[href="#informations"]').on('click', function(){
+          $(this).tab('show');
+        });
+        $('#a[href="#avis"]').on('click', function(){
+          $(this).tab('show');
+        });
+        $('#a[href="#hairfies"]').on('click', function(){
+          $(this).tab('show');
+        });
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 
@@ -610,7 +620,6 @@
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
         <script src="bower_components/bootstrap/js/tooltip.js"></script>
         <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/button.js"></script>
         <script src="bower_components/bootstrap/js/popover.js"></script>
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>

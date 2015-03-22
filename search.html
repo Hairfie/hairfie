@@ -275,7 +275,7 @@
                 
                 <!-- Tabs -->
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="salons">
+                  <div role="tabpanel" class="tab-pane fade in active" id="salons">
                     <div class="filters">
                       <label for="date">
                         <span>Date</span>
@@ -384,7 +384,7 @@
                       </section>
                     </div>
                   </div>
-                  <div role="tabpanel" class="tab-pane " id="adom">
+                  <div role="tabpanel" class="tab-pane fade" id="adom">
                     <div class="filters">
                       <label for="date">
                         <span>Date</span>
@@ -492,7 +492,7 @@
                       </section>
                     </div>
                   </div>
-                  <div role="tabpanel" class="tab-pane" id="hairfies">
+                  <div role="tabpanel" class="tab-pane fade" id="hairfies">
                       <section>
                         <h3>Les Hairfies</h3>
                         <div class="salon-hairfies hairfies ">
@@ -648,6 +648,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
@@ -664,7 +665,16 @@
             // $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
           }
         });
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown();
+        $('a[href="#salons"]').on('click', function(){
+          $(this).tab('show');
+        });
+        $('a[href="#adom"]').on('click', function(){
+          $(this).tab('show');
+        });
+        $('a[href="#hairfies"]').on('click', function(){
+          $(this).tab('show');
+        });
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 
