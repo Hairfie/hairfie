@@ -7270,6 +7270,20 @@ section.home-section .btn.home-cta {
   height: 100%;
   display: block;
   line-height: 140px;
+  position: relative;
+}
+#home section:first-child figcaption a span {
+  display: block;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 40%;
+  height: 2.8em;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -1.4em;
+  margin-left: -20%;
 }
 #home section:first-child .row + .row {
   margin-top: 15px;
@@ -7352,12 +7366,12 @@ section.home-section .btn.home-cta {
 }
 #home section:nth-child(2) figure figcaption .icon-promo {
   position: absolute;
-  top: 35px;
+  top: 25px;
   right: 35px;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   background-size: 100%;
-  line-height: 45px;
+  line-height: 60px;
 }
 #home section:nth-child(2) figure figcaption .stars {
   height: auto;
