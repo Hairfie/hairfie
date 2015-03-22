@@ -73,7 +73,7 @@
 				h2 {
 					font-size: 1.5em;
 				}
-				p {letter-spacing: 1px; margin-top: 0; font-size: 1.5em;}
+				p {letter-spacing: 1px; margin-top: 4px;font-size: 1.3em;}
 				p a {text-decoration: underline;&:hover {color: #343434;}}
 				.tags {
 					margin-left: -3px;
@@ -92,8 +92,11 @@
 					a {
 						float: none;
 						text-decoration: none;
-						font-size: 0.786em;
+						font-size: 0.9em;
 						color: @font-color;
+						&:hover {
+							color: black;
+						}
 						&:after {
 							content: " ";
 							width: 72%;
@@ -142,8 +145,23 @@
 						height: 1.2em;
 						line-height: 1.2em;
 						.transition(all 0.1s ease);
-						&.full {
+
+						&:after {
+							content:"\e005";
+							font-family: glyphicon;
+							font-family: Glyphicons Halflings;
 							color: @red;
+							position: absolute;
+							top: 0; left: 0; z-index: 99;
+							opacity: 0;
+							.scale(0.1);
+							.transition(all 0.25s ease);
+						}
+						&.full {
+							&:after {
+								opacity: 1;
+								.scale(1);
+							}
 						}
 					}
 				}

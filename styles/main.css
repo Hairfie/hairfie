@@ -8385,8 +8385,8 @@ section.home-footer .row > div p {
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos p {
   letter-spacing: 1px;
-  margin-top: 0;
-  font-size: 1.5em;
+  margin-top: 4px;
+  font-size: 1.3em;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos p a {
   text-decoration: underline;
@@ -8415,8 +8415,11 @@ section.home-footer .row > div p {
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos .likes a {
   float: none;
   text-decoration: none;
-  font-size: 0.786em;
+  font-size: 0.9em;
   color: #595959;
+}
+.hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos .likes a:hover {
+  color: black;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) .salon-infos .likes a:after {
   content: " ";
@@ -8472,8 +8475,34 @@ section.home-footer .row > div p {
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
 }
-.hairfie-singleView#content .single-view .like-group .like-btn a .glyphicon.full {
+.hairfie-singleView#content .single-view .like-group .like-btn a .glyphicon:after {
+  content: "\e005";
+  font-family: glyphicon;
+  font-family: Glyphicons Halflings;
   color: #fc5a5f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;
+  transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.hairfie-singleView#content .single-view .like-group .like-btn a .glyphicon.full:after {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 .hairfie-singleView#content .single-view .like-group .cta {
   float: none;
