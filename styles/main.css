@@ -7316,7 +7316,7 @@ section.home-section .btn.home-cta {
   height: 275px;
 }
 #home section:nth-child(2) figure figcaption {
-  height: 45%;
+  height: 40%;
   bottom: 0;
   top: auto;
   background-color: rgba(0, 0, 0, 0.35);
@@ -7340,6 +7340,7 @@ section.home-section .btn.home-cta {
 }
 #home section:nth-child(2) figure figcaption a:first-child {
   text-transform: uppercase;
+  margin-top: 10px;
 }
 #home section:nth-child(2) figure figcaption a:first-child:hover {
   text-decoration: none;
@@ -7347,6 +7348,7 @@ section.home-section .btn.home-cta {
 #home section:nth-child(2) figure figcaption a:nth-child(2) {
   font-weight: 400;
   font-size: .9em;
+  margin-bottom: 5px;
 }
 #home section:nth-child(2) figure figcaption .icon-promo {
   position: absolute;
