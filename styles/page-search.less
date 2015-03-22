@@ -2,6 +2,33 @@
 	   P A G E  S E A R C H  
 ////////////////////////////////*/
 #content.search {
+	
+	.breadcrumb {
+		margin-top: 15px;
+		margin-bottom: 0;
+		padding-left: 0;
+		font-size: 1.2em;
+		letter-spacing: 1px;
+		color: @font-color;
+		.active {
+			color: darken(@font-color, 25%);
+			position: relative;
+			&:after {
+				content: " ";
+				width: calc(100% - 20px);
+				position: absolute;
+				height: 1px;
+				bottom: -1px;
+				right: 0;
+				background: darken(@font-color, 20%);
+			}
+		}
+		a {
+			color: @font-color;
+
+		}
+	}
+
 	.main-content {
 		padding-top: 20px;
 
