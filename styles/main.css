@@ -8317,41 +8317,16 @@ section.home-footer .row > div p {
 .hairfie-singleView#content .single-view > .col-sm-6:first-child {
   padding-right: 0;
 }
-.hairfie-singleView#content .single-view figure {
+.hairfie-singleView#content .single-view #carousel-hairfie {
   height: 100%;
   position: relative;
   margin-left: -15px;
 }
-.hairfie-singleView#content .single-view figure img {
-  position: relative;
-  display: block;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
+.hairfie-singleView#content .single-view #carousel-hairfie .item {
+  height: 570px;
 }
-.hairfie-singleView#content .single-view figure figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.hairfie-singleView#content .single-view figure figcaption .pricetag {
-  font-size: 1.6em;
-  top: 20px;
-  left: 20px;
-  color: white;
-  font-weight: 600;
-}
-.hairfie-singleView#content .single-view figure figcaption .user {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 20px;
-  top: 20px;
-  overflow: hidden;
-}
-.hairfie-singleView#content .single-view figure figcaption .user img {
-  width: 100%;
-  height: 100%;
+.hairfie-singleView#content .single-view #carousel-hairfie .item .outer-img {
+  height: 570px;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) {
   padding: 20px;

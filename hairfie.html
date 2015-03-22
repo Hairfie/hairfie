@@ -60,13 +60,39 @@
     <div class="container hairfie-singleView" id="content" >
       <div class="row single-view">
         <div class="col-xs-12 col-sm-6">
-          <figure>
+          <div id="carousel-hairfie" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators hide">
+              <li data-target="#carousel-hairfie" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-hairfie" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="outer-img">
+                  <img src="images/placeholder-hairfie-big.jpg" alt="...">
+                </div>
+              </div>
+              <div class="item">
+                <div class="outer-img">
+                  <img src="images/placeholder-hairfie-big-2.jpg" alt="...">
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-hairfie" role="button" data-slide="prev">
+              <span class="arrow arrow-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-hairfie" role="button" data-slide="next">
+              <span class="arrow arrow-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- <figure>
             <img src="images/placeholder-hairfie-big.jpg" alt="#" />
             <figcaption>
               <div class="pricetag">125€</div>
               <div class="user"><a href="#"><img src="images/placeholder-user-pp.jpg" alt="#"></a></div>
             </figcaption>
-          </figure>
+          </figure> -->
           <div class="like-group">
             <div class="like-btn">
               <a href="#">
@@ -332,6 +358,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
@@ -341,6 +368,8 @@
         $('.like-btn').on('click',function(){
           $('.glyphicon-heart').toggleClass('full');
         });
+        $('#carousel-hairfie').carousel();
+
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 
