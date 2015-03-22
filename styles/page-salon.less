@@ -76,6 +76,9 @@
 			.social {
 				height: auto;
 				padding: 20px 0px 40px 35px;
+				div.twitter {
+					padding-right: 0;
+				}
 				a {
 					background: #f4f4f4;
 					border:1px solid #d2d5d6;
@@ -356,11 +359,35 @@
 			ul {
 				padding: 20px;
 				margin: 10px auto;
-				width: 89%;
+				width: 78%;
 				li {
+					margin-right: 10px;
+					&:last-child {margin-right: 0;}
 					a {
+						width: 38px;
+						box-sizing: border-box;
 						color: @font-color;
 						border-color: @font-color;
+						position: relative;
+						.transition(all 0.25s ease);
+						&:after {
+							content: " ";
+							position: absolute;
+							width: ~"calc(100% + 4px)";height: ~"calc(100% + 4px)";
+							border-radius: 100%;
+							border: 2px solid @font-color;
+							left: -2px;top: -2px;
+							opacity: 0;
+							.transition(all 0.25s ease);
+						}
+						&:hover {
+							.transition(all 0.25s ease);
+							color: @font-color !important;
+							background-color: transparent !important;
+							&:after {
+								opacity: 1;
+							}
+						}
 					}
 				}
 			}

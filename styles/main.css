@@ -7966,6 +7966,9 @@ section.home-footer .row > div p {
   height: auto;
   padding: 20px 0px 40px 35px;
 }
+.salon#content .main-content section.salon-info .social div.twitter {
+  padding-right: 0;
+}
 .salon#content .main-content section.salon-info .social a {
   background: #f4f4f4;
   border: 1px solid #d2d5d6;
@@ -8252,11 +8255,53 @@ section.home-footer .row > div p {
 .salon#content .sidebar .networks ul {
   padding: 20px;
   margin: 10px auto;
-  width: 89%;
+  width: 78%;
+}
+.salon#content .sidebar .networks ul li {
+  margin-right: 10px;
+}
+.salon#content .sidebar .networks ul li:last-child {
+  margin-right: 0;
 }
 .salon#content .sidebar .networks ul li a {
+  width: 38px;
+  box-sizing: border-box;
   color: #595959;
   border-color: #595959;
+  position: relative;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.salon#content .sidebar .networks ul li a:after {
+  content: " ";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 100%;
+  border: 2px solid #595959;
+  left: -2px;
+  top: -2px;
+  opacity: 0;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.salon#content .sidebar .networks ul li a:hover {
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  color: #595959 !important;
+  background-color: transparent !important;
+}
+.salon#content .sidebar .networks ul li a:hover:after {
+  opacity: 1;
 }
 /*////////////////////////////////
       P A G E  H A I R F I E
