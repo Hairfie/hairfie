@@ -5,6 +5,18 @@
 	
 	min-height: ~"calc(100vh - 60px)";
 	height: 100%;
+	position: relative;
+
+	> a span.arrow {
+		position: absolute;
+		top: 283px;
+	}
+	> a span.arrow-right {
+		right: -50px !important;
+	}
+	> a span.arrow-left {
+		left: -50px !important;
+	}
 
 	.single-view {
 		margin: 40px auto;
@@ -21,6 +33,35 @@
 				.outer-img {
 					height: 570px;
 				}
+			}
+			.carousel-control {
+				bottom: 0;
+				height: 40px;
+				width: 40px;
+				top: auto;
+				&.left {
+					left: 50%;
+					margin-left: -40px;
+				}
+				&.right {
+					right: 50%;
+					margin-right: -40px;
+				}
+				span.arrow {
+					background-image: none;
+					width: 20px; height: 20px;
+					background-color: rgba(255,255,255,0.65);
+					border-radius: 100%;
+					&.arrow-right {
+						position: static;
+						margin: 10px auto;
+					}
+					&.arrow-left {
+						position: static;
+						margin: 10px auto;
+					}
+				}
+				
 			}
 		}
 		> div:nth-child(2) {

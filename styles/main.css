@@ -8393,6 +8393,17 @@ section.home-footer .row > div p {
 .hairfie-singleView#content {
   min-height: calc(100vh - 60px);
   height: 100%;
+  position: relative;
+}
+.hairfie-singleView#content > a span.arrow {
+  position: absolute;
+  top: 283px;
+}
+.hairfie-singleView#content > a span.arrow-right {
+  right: -50px !important;
+}
+.hairfie-singleView#content > a span.arrow-left {
+  left: -50px !important;
 }
 .hairfie-singleView#content .single-view {
   margin: 40px auto;
@@ -8411,6 +8422,35 @@ section.home-footer .row > div p {
 }
 .hairfie-singleView#content .single-view #carousel-hairfie .item .outer-img {
   height: 570px;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control {
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  top: auto;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control.left {
+  left: 50%;
+  margin-left: -40px;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control.right {
+  right: 50%;
+  margin-right: -40px;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control span.arrow {
+  background-image: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 100%;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control span.arrow.arrow-right {
+  position: static;
+  margin: 10px auto;
+}
+.hairfie-singleView#content .single-view #carousel-hairfie .carousel-control span.arrow.arrow-left {
+  position: static;
+  margin: 10px auto;
 }
 .hairfie-singleView#content .single-view > div:nth-child(2) {
   padding: 20px;
