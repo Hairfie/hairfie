@@ -91,13 +91,7 @@ section.home-section {
   			min-width: 100%; height: auto;
 			.transition(all 0.25s ease-out);
   		}
-  		&:hover {
-			.transition(all 0.25s ease-out);
 
-			img {
-				.scale(1.1);
-			}
-		}
   		figcaption {
   			top: 0;left: 0;
   			background: rgba(0,0,0,0.07);
@@ -135,6 +129,15 @@ section.home-section {
 // Overrides:
 
 #home section:first-child {
+	figure {
+  		&:hover {
+			.transition(all 0.25s ease-out);
+
+			img {
+				.scale(1.1);
+			}
+		}
+	}
 	figcaption{
 
 		font-size: 2.1em;
@@ -193,11 +196,6 @@ section.home-section {
 	figure {
 		border-radius: 0;
 		cursor: pointer;
-		&:hover {
-			img {
-				.scale(1.05);
-			}
-		}
 		img {
 			height: 275px;
 		}
@@ -301,8 +299,18 @@ section.home-section {
 		    max-height: 540px;
 
 		    figcaption{ 
-		    	font-size: 3.3em;
-
+		    	font-size: 2.1em;
+				p{
+					margin-left: 20px;
+					font-weight: @regular;
+					a {
+						display: inline-block;
+					    margin-top: 0 !important;
+					    margin-left: 0 !important;
+					    text-transform: none;
+					    text-decoration: underline;
+					}	
+				}
 				a:first-child {
 					margin-top: 80%;
 

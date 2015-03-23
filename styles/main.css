@@ -6805,6 +6805,13 @@ input[type="checkbox"]:disabled:checked + span:after {
 .hairfies .single-hairfie figure figcaption p a {
   color: white;
 }
+.hairfies .single-hairfie figure figcaption .pricetag {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 10px 8px;
+}
 .hairfies .single-hairfie figure:hover figcaption {
   opacity: 1;
 }
@@ -7252,20 +7259,6 @@ section.home-section figure img {
   -ms-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
 }
-section.home-section figure:hover {
-  transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-}
-section.home-section figure:hover img {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
 section.home-section figure figcaption {
   top: 0;
   left: 0;
@@ -7294,6 +7287,20 @@ section.home-section .btn.home-cta {
   display: block;
   margin: 40px auto 0;
   float: none !important;
+}
+#home section:first-child figure:hover {
+  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+}
+#home section:first-child figure:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 #home section:first-child figcaption {
   font-size: 2.1em;
@@ -7352,13 +7359,6 @@ section.home-section .btn.home-cta {
 #home section:nth-child(2) figure {
   border-radius: 0;
   cursor: pointer;
-}
-#home section:nth-child(2) figure:hover img {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
 }
 #home section:nth-child(2) figure img {
   height: 275px;
@@ -7448,7 +7448,18 @@ section.home-section .btn.home-cta {
   max-height: 540px;
 }
 #home section:nth-child(3) .big figure figcaption {
-  font-size: 3.3em;
+  font-size: 2.1em;
+}
+#home section:nth-child(3) .big figure figcaption p {
+  margin-left: 20px;
+  font-weight: 400;
+}
+#home section:nth-child(3) .big figure figcaption p a {
+  display: inline-block;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  text-transform: none;
+  text-decoration: underline;
 }
 #home section:nth-child(3) .big figure figcaption a:first-child {
   margin-top: 80%;
@@ -8630,7 +8641,7 @@ section.home-footer .row > div p {
   text-align: center;
   margin: 0 auto 40px;
 }
-.hairfie-singleView#content .related-hairfies div {
+.hairfie-singleView#content .related-hairfies .single-hairfie {
   padding: 3px;
   padding-top: 0;
   padding-left: 0;
