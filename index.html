@@ -333,6 +333,14 @@
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
 
+        <script>
+          $(document).ready(function() {
+            TweenMax.to('.landing header', 1, {opacity:1,ease:Power4.easeInut});
+            TweenMax.to('.headline', 0.7, {opacity:1,top:0,ease:Power4.easeInut,delay:0.5});
+            TweenMax.to('.searchbar', 0.7, {opacity:1,marginTop:'+=20',ease:Power4.easeOut,delay:0.65});
+          });
+        </script>
+
         <!-- build:js scripts/vendor/bootstrap.js 
         <script src="bower_components/bootstrap/js/affix.js"></script>
         <script src="bower_components/bootstrap/js/alert.js"></script>

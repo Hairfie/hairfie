@@ -411,7 +411,8 @@
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
         <script src="bower_components/bootstrap/js/carousel.js"></script>
         <script src="scripts/main.js"></script>
@@ -425,6 +426,8 @@
         });
         $('#carousel-hairfie').carousel();
 
+        TweenMax.to('#content .single-view', 0.5, {marginTop:40,opacity:1,ease:Power2.easeIn});
+        TweenMax.to('#content .related-hairfies', 0.5, {marginTop:0,opacity:1,ease:Power2.easeIn,delay:0.3});
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 

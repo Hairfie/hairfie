@@ -602,6 +602,8 @@
     
     <script type='text/javascript'>
       $(document).ready(function(){
+        TweenMax.to('#content.salon .main-content', 0.5, {top:0,opacity:1,ease:Power2.easeIn});
+
         $('#carousel-salon').carousel();
         $('#a[href="#informations"]').on('click', function(){
           $(this).tab('show');

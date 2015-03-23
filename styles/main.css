@@ -6259,15 +6259,6 @@ span.arrow-right {
   color: white;
   position: relative;
 }
-.cal td.active a:after {
-  content: " ";
-  height: 2px;
-  width: 70%;
-  background-color: white;
-  position: absolute;
-  bottom: 5px;
-  left: 15%;
-}
 .cal td:hover {
   background-color: #e5e5e5;
   transition: all 0.1s ease-in-out;
