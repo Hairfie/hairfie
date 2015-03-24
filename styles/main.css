@@ -7243,6 +7243,11 @@ footer p {
   height: 132px;
   float: none !important;
 }
+@media screen and (max-width: 767px) {
+  .landing .headline h1 {
+    margin-top: 200px;
+  }
+}
 .landing .headline p {
   letter-spacing: 1.34px;
   padding: 0 10%;
