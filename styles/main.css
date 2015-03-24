@@ -6575,6 +6575,9 @@ ul {
   letter-spacing: 1px;
   border-bottom: 1px solid #f2f2f2;
 }
+.main-searchbar .search-bar-extra div ul li:not(.heading) {
+  text-align: left;
+}
 .main-searchbar .search-bar-extra div ul li:last-child {
   border-bottom: 0;
 }
@@ -6596,7 +6599,6 @@ ul {
 }
 .main-searchbar .search-bar-extra div.coiffeurs li:not(.heading) {
   line-height: 1.2em;
-  text-align: left;
   padding: 9px 0;
 }
 .main-searchbar .search-bar-extra div.coiffeurs li:not(.heading) a {
