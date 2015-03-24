@@ -6585,13 +6585,13 @@ ul {
   line-height: 40px;
   border-width: 1px;
 }
-.searchbar.small-search input[type="search"] {
-  width: 64.9% !important;
-}
 .searchbar.small-search .btn-red {
   height: 40px;
   line-height: 25px;
   border-radius: 0;
+  margin-left: 0;
+  padding: 6px 42px;
+  width: auto;
 }
 figure {
   position: relative;
