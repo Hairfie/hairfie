@@ -7531,6 +7531,16 @@ section.home-section .btn.home-cta {
   background: #f0f0f1;
   z-index: -1;
 }
+#home section:nth-child(5) a {
+  font-size: 1.6em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #595959;
+  letter-spacing: 1px;
+}
+#home section:nth-child(5) a:hover {
+  color: #595959;
+}
 section.home-footer .row > div {
   margin-bottom: 60px;
   text-align: center;
