@@ -6389,7 +6389,7 @@ ul {
   top: 18px;
   left: 50%;
   margin-left: -10px;
-  z-index: 999;
+  z-index: 99;
 }
 #content ul.nav li a {
   width: 100%;
@@ -7097,6 +7097,7 @@ header:not(.white) .dropdown-menu a:hover {
   z-index: 99;
   top: 85px;
   height: 0px;
+  width: 100vw;
   overflow: hidden;
 }
 .mobile-nav .mobile-menu h2 {
@@ -7107,6 +7108,7 @@ header:not(.white) .dropdown-menu a:hover {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #535353;
+  text-align: center;
 }
 .mobile-nav .mobile-menu .hr {
   width: 96px;
@@ -7672,6 +7674,11 @@ section.home-footer .row > div p {
 /*////////////////////////////////
 	   P A G E  S E A R C H  
 ////////////////////////////////*/
+@media screen and (max-width: 991px) {
+  #content.search {
+    margin-top: 85px;
+  }
+}
 #content.search .breadcrumb {
   margin-top: 15px;
   margin-bottom: 0;
@@ -7768,6 +7775,12 @@ section.home-footer .row > div p {
   background-color: #353535;
   color: white;
 }
+@media screen and (max-width: 767px) {
+  #content.search .main-content .filters label span {
+    width: 95px;
+    text-align: center;
+  }
+}
 #content.search .main-content .filters label input,
 #content.search .main-content .filters label select {
   -webkit-appearance: none;
@@ -7785,6 +7798,12 @@ section.home-footer .row > div p {
 #content.search .main-content .filters label select:focus {
   outline: none;
 }
+@media screen and (max-width: 767px) {
+  #content.search .main-content .filters label input,
+  #content.search .main-content .filters label select {
+    width: 67%;
+  }
+}
 #content.search .main-content .filters label input {
   padding-left: 15px;
 }
@@ -7800,9 +7819,22 @@ section.home-footer .row > div p {
   background: url(../images/icon-chevron-down.png) no-repeat center center;
   position: absolute;
   top: 18px;
-  right: 12px;
+  right: 25px;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  #content.search .main-content .filters label span.caret {
+    right: 30px;
+  }
+}
+#content.search .main-content .filters label[for="category"] > div {
+  float: right;
+}
+@media screen and (max-width: 767px) {
+  #content.search .main-content .filters label[for="category"] > div {
+    float: none !important;
+  }
 }
 #content.search .main-content .tab-pane section {
   padding-bottom: 20px;
@@ -7824,6 +7856,13 @@ section.home-footer .row > div p {
   margin: 0 auto;
   min-height: 197px;
   max-height: 197px;
+}
+@media screen and (max-width: 991px) {
+  #content.search .main-content .tab-pane section img {
+    min-height: 0;
+    max-height: none;
+    width: 100%;
+  }
 }
 #content.search .main-content .tab-pane section .rating {
   position: absolute;
@@ -7894,18 +7933,53 @@ section.home-footer .row > div p {
 #content.search .main-content .tab-pane#adom {
   margin-top: 20px;
 }
-#content.search .main-content .tab-pane#adom section > div.col-xs-4 img {
+#content.search .main-content .tab-pane#adom section .image-bloc img {
   border-radius: 100%;
+}
+@media screen and (max-width: 991px) {
+  #content.search .main-content .tab-pane#adom section .image-bloc img {
+    width: 50%;
+    margin: 20px auto;
+  }
 }
 #content.search .main-content .tab-pane#salons section {
   max-height: 220px;
   overflow: hidden;
 }
-#content.search .main-content .tab-pane#salons section > div.col-xs-4 {
+@media screen and (max-width: 991px) {
+  #content.search .main-content .tab-pane#salons section {
+    max-height: 100%;
+  }
+}
+#content.search .main-content .tab-pane#salons section .image-bloc {
   padding-left: 0;
 }
-#content.search .main-content .tab-pane#salons section > div.col-xs-4 img {
+@media screen and (max-width: 991px) {
+  #content.search .main-content .tab-pane#salons section .image-bloc {
+    padding-right: 0;
+  }
+}
+#content.search .main-content .tab-pane#salons section .image-bloc img {
   display: inline;
+}
+#content.search .main-content .tab-pane#salons .image-bloc,
+#content.search .main-content .tab-pane#adom .image-bloc {
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  #content.search .main-content .tab-pane#salons .info-bloc,
+  #content.search .main-content .tab-pane#adom .info-bloc {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+  }
+  #content.search .main-content .tab-pane#salons .info-bloc .btn-red,
+  #content.search .main-content .tab-pane#adom .info-bloc .btn-red {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
 }
 #content.search .main-content .tab-pane#hairfies section:after {
   content: none;

@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="white hidden-xs">
+      <header class="white hidden-xs hidden-sm">
           <div class="row">
             <div class="col-md-12">
               <a href="index.html" class="logo col-md-4"></a>
@@ -55,7 +55,7 @@
             </div>
           </div>
       </header>    
-      <div class="row hidden-xs">
+      <div class="row hidden-xs hidden-sm">
         <div class="searchbar small-search col-sm-12">
             <input type=search name=s placeholder='Où ?' class='col-sm-3' >
             <input type=search name=s placeholder='Où ?' class='col-sm-3' >
@@ -64,11 +64,29 @@
         </div>
       </div>
     </div>
+    <div class="mobile-nav visible-sm visible-xs">
+      <header class="container" style="margin-left:0;">
+          <a href="index.html" class="logo col-xs-4"></a>
+          <a href="#" class="col-xs-4 menu-trigger pull-right"></a>
+      </header>  
+      <div class="mobile-menu">
+        <div class="container">
+          <h2>Réservez votre coiffeur</h2>
+          <span class="hr"></span>
+          <div class="searchbar col-xs-10">
+            <input class='col-xs-12'type=search name=s placeholder='Où ?' >
+            <input class='col-xs-12'type=search name=s placeholder='Nom, spécialité...' >
+            <input type=date class='col-xs-12'/>
+            <a href="#" class='btn btn-red col-xs-12'>Lancer la recherche</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container search" id="content">
       <div class="row">
 
-        <div class="col-xs-12">
+        <div class="col-xs-12 hidden-xs hidden-sm">
           <ol class="breadcrumb">
             <li><a href="#">Lien</a></li>
             <li><a href="#">Lien 2</a></li>
@@ -76,7 +94,7 @@
           </ol>
         </div>
 
-        <div class="sidebar col-sm-4">
+        <div class="sidebar col-md-4 col-sm-12 hidden-xs">
           <section class='filter-recap'>
             <h2>Ma séléction</h2>
             <label class="checkbox-inline">
@@ -265,7 +283,7 @@
                       </li>
                       <li role="presentation" class="col-xs-4">
                         <span class="icon-nav"></span>
-                        <a href="#adom" aria-controls="adom" role="tab" data-toggle="tab">Coiffeurs à domicile</a>
+                        <a href="#adom" aria-controls="adom" role="tab" data-toggle="tab"><span class="hidden-xs">Coiffeurs </span>à&nbsp;domicile</a>
                       </li>
                       <li role="presentation" class="col-xs-4">
                         <span class="icon-nav"></span>
@@ -277,29 +295,31 @@
                 <!-- Tabs -->
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane fade in active" id="salons">
-                    <div class="filters">
-                      <label for="date">
+                    <div class="filters col-xs-12">
+                      <label for="date" class="col-xs-12 col-md-6">
                         <span>Date</span>
                         <input type="date">
                       </label>
-                      <label for="category" class="pull-right">
-                        <span>Trier par</span>
-                        <select name="category" id="category">
-                          <option value="" selected>Catégories</option>
-                          <option value="cat1">cat1</option>
-                          <option value="cat2">cat2</option>
-                          <option value="cat3">cat3</option>
-                        </select>
-                        <span class="caret"></span>
+                      <label for="category" class="pull-right col-xs-12 col-md-6">
+                        <div>
+                          <span>Trier par</span>
+                          <select name="category" id="category">
+                            <option value="" selected>Catégories</option>
+                            <option value="cat1">cat1</option>
+                            <option value="cat2">cat2</option>
+                            <option value="cat3">cat3</option>
+                          </select>
+                          <span class="caret"></span>
+                        </div>
                       </label>
                     </div>
 
                     <div class="row">
                       <section class='col-xs-12'>
-                        <div class="col-xs-4">
+                        <div class="col-xs-12 col-sm-4 image-bloc">
                           <img src="images/placeholder-salon-thumb.jpg" alt=""/>
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-12 col-sm-8 info-bloc">
                           <div class="address-bloc">
                             <h3><a href="#">Alexandre de Paris</a></h3>
                             <a href="#">1 rue Vivienne 75001 Paris</a>
@@ -316,13 +336,13 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li >
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs hidden-md hidden-sm'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='more'>
@@ -340,10 +360,10 @@
                         </div>
                       </section>
                       <section class='col-xs-12'>
-                        <div class="col-xs-4">
+                        <div class="col-xs-12 col-sm-4 image-bloc">
                           <img src="images/placeholder-salon-thumb.jpg" alt=""/>
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-12 col-sm-8 info-bloc">
                           <div class="address-bloc">
                             <h3><a href="#">Alexandre de Paris</a></h3>
                             <a href="#">1 rue Vivienne 75001 Paris</a>
@@ -363,10 +383,10 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs hidden-md hidden-sm'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='more'>
@@ -386,28 +406,30 @@
                     </div>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="adom">
-                    <div class="filters">
-                      <label for="date">
+                    <div class="filters col-xs-12">
+                      <label for="date" class="col-xs-12 col-md-6">
                         <span>Date</span>
                         <input type="date">
                       </label>
-                      <label for="category" class="pull-right">
-                        <span>Trier par</span>
-                        <select name="category" id="category">
-                          <option value="" selected>Catégories</option>
-                          <option value="cat1">cat1</option>
-                          <option value="cat2">cat2</option>
-                          <option value="cat3">cat3</option>
-                        </select>
-                        <span class="caret"></span>
+                      <label for="category" class="pull-right col-xs-12 col-md-6">
+                        <div>
+                          <span>Trier par</span>
+                          <select name="category" id="category">
+                            <option value="" selected>Catégories</option>
+                            <option value="cat1">cat1</option>
+                            <option value="cat2">cat2</option>
+                            <option value="cat3">cat3</option>
+                          </select>
+                          <span class="caret"></span>
+                        </div>
                       </label>
                     </div>
                     <div class="row">
                       <section class='col-xs-12'>
-                        <div class="col-xs-4">
+                        <div class="col-sm-4 col-xs-12 image-bloc">
                           <img src="images/placeholder-adom-thumb.jpg" alt=""/>
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-sm-8 col-xs-12 info-bloc">
                           <div class="address-bloc">
                             <h3><a href="#">Sluty Suzy</a></h3>
                             <a href="#" class="address">Paris 1, Paris, 2, Paris 3, Paris 11, Paris 20</a>
@@ -427,10 +449,10 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class="hidden-xs">
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs hidden-md hidden-sm'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='more'>
@@ -448,10 +470,10 @@
                         </div>
                       </section>
                       <section class='col-xs-12'>
-                        <div class="col-xs-4">
+                        <div class="col-sm-4 col-xs-12 image-bloc">
                           <img src="images/placeholder-adom-thumb.jpg" alt=""/>
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-sm-8 col-xs-12 info-bloc">
                           <div class="address-bloc">
                             <h3><a href="#">Sluty Suzy</a></h3>
                             <a href="#" class="address">Paris 1, Paris, 2, Paris 3, Paris 11, Paris 20</a>
@@ -471,10 +493,10 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class="hidden-xs">
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs hidden-md hidden-sm'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='more'>
@@ -498,7 +520,7 @@
                         <h3>Les Hairfies</h3>
                         <div class="salon-hairfies hairfies ">
                           <div class="row">
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -510,7 +532,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -522,7 +544,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -534,7 +556,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -546,7 +568,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -558,7 +580,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -570,7 +592,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -582,7 +604,7 @@
                                 </figcaption>
                               </figure>
                             </div>
-                            <div class="col-md-3 single-hairfie">
+                            <div class="col-xs-6 col-md-3 single-hairfie">
                               <figure>
                                 <a href="#">
                                   <img src="images/placeholder-hairfieSalon.jpg" alt="hairfie" />
@@ -655,7 +677,7 @@
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
         <script src="bower_components/bootstrap/js/transition.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
@@ -683,6 +705,16 @@
         });
         $('a[href="#hairfies"]').on('click', function(){
           $(this).tab('show');
+        });
+
+        $('body').on("click",'.mobile-nav .menu-trigger',function(){
+          if( $('.mobile-menu').height() == 0 ) {
+            $('.menu-trigger').addClass('close');
+            TweenMax.to('.mobile-menu', 0.4, {height:'100vh',ease:Power2.easeInOut});
+          } else {
+            $('.menu-trigger').removeClass('close');
+            TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
+          }
         });
       });
     </script>
