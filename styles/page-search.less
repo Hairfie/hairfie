@@ -36,6 +36,9 @@
 
 		.search-content {
 			.fullWidthBg(@bg3);
+			@media screen and (max-width: @screen-xs-max) {
+				padding-bottom: 65px;
+			}
 		}
 		
 		.header-part {
@@ -445,6 +448,30 @@
 					.box-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
 				}
 			}
+		}
+	}
+	.mobile-search {
+		position: relative;
+		width: 100vw;
+		.btn-red.trigger {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 65px;
+			z-index: 999;
+			text-align: center;
+			left: 0;
+			line-height: 65px;
+			letter-spacing: 2px;
+			font-size: 2em;
+		}	
+		.mobile-filtres {
+			position: fixed;
+  			left: 0; z-index: 998;
+  			background-color: @bg3;
+			height: ~"calc(100vh - 130px)";
+			overflow: scroll;
+			top: 100%;
 		}
 	}
 }

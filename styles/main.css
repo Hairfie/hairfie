@@ -6389,7 +6389,7 @@ ul {
   top: 18px;
   left: 50%;
   margin-left: -10px;
-  z-index: 99;
+  z-index: 2;
 }
 #content ul.nav li a {
   width: 100%;
@@ -7729,6 +7729,11 @@ section.home-footer .row > div p {
   background: #f4f4f4;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  #content.search .main-content .search-content {
+    padding-bottom: 65px;
+  }
+}
 #content.search .main-content .header-part .cover {
   border-radius: 3px;
   display: block;
@@ -8138,6 +8143,31 @@ section.home-footer .row > div p {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#content.search .mobile-search {
+  position: relative;
+  width: 100vw;
+}
+#content.search .mobile-search .btn-red.trigger {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 999;
+  text-align: center;
+  left: 0;
+  line-height: 65px;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+#content.search .mobile-search .mobile-filtres {
+  position: fixed;
+  left: 0;
+  z-index: 998;
+  background-color: #f4f4f4;
+  height: calc(100vh - 130px);
+  overflow: scroll;
+  top: 100%;
 }
 /*////////////////////////////////
 	   P A G E  S A L O N 

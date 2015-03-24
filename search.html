@@ -82,8 +82,179 @@
         </div>
       </div>
     </div>
+      
 
     <div class="container search" id="content">
+      <div class="mobile-search visible-sm visible-xs">
+          <a href="#" class="btn-red trigger">Filtres</a>
+          <div class="mobile-filtres">
+            <div class="sidebar col-xs-12">
+              <section class='filter-recap'>
+                <h2>Ma séléction</h2>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="" checked class='checkbox-disabled'>
+                  <span></span>
+                   Enfants
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="" checked class='checkbox-disabled'>
+                  <span></span>
+                   Brésilien
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" align="baseline" value="" checked class='checkbox-disabled'>
+                  <span></span>
+                   Foot
+                </label>
+              </section>
+              <h1>Filtrer la recherche</h1>
+              <section>
+                <form action="">
+                  <div>
+                    <h2>Pour qui ?</h2>
+                   <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Homme
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Femme
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Enfant
+                    </label>
+                  </div>
+                  <div>
+                   <h2>Ville</h2>
+                    <div class="input-group">
+                      <div class="input-group-addon first"></div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Ville">
+                      <div class="input-group-addon"><a href="#" class="submit"></a></div>
+                      <!-- <img src="images/icon-search-glass.png" alt=""> -->
+                    </div>
+                  </div>
+                  <div class='price'>
+                    <h2>Fourchette de prix</h2>  
+                    <div class="selectRange">
+                      <div id="rangeslider"></div>
+                      <p class="col-xs-6">10€</p>
+                      <p class="col-xs-6">1000€</p>
+                    </div>
+                  </div>
+                  <div>
+                   <h2>Style</h2>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Afro
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Asiatique
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Occidental
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Retro
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Décalé
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Classique
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                       Jeune
+                    </label>
+                  </div>
+                  <div>
+                   <h2>Cheveux</h2>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Raides
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Ondulés
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Bouclés
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Crépus
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Longs
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Courts
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Épais
+                    </label>
+                  </div>
+                  <div>
+                   <h2>Couleur</h2>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Blonde
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Brune
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Rousse
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Chatain
+                    </label>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" align="baseline" value="">
+                      <span></span>
+                      Gris
+                    </label>
+
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>  
+      </div>
       <div class="row">
 
         <div class="col-xs-12 hidden-xs hidden-sm">
@@ -94,7 +265,7 @@
           </ol>
         </div>
 
-        <div class="sidebar col-md-4 col-sm-12 hidden-xs">
+        <div class="sidebar col-md-4 col-sm-12 hidden-xs hidden-sm">
           <section class='filter-recap'>
             <h2>Ma séléction</h2>
             <label class="checkbox-inline">
@@ -296,11 +467,11 @@
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane fade in active" id="salons">
                     <div class="filters col-xs-12">
-                      <label for="date" class="col-xs-12 col-md-6">
+                      <label for="date" class="col-xs-12 col-sm-6">
                         <span>Date</span>
                         <input type="date">
                       </label>
-                      <label for="category" class="pull-right col-xs-12 col-md-6">
+                      <label for="category" class="pull-right col-xs-12 col-sm-6">
                         <div>
                           <span>Trier par</span>
                           <select name="category" id="category">
@@ -407,11 +578,11 @@
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="adom">
                     <div class="filters col-xs-12">
-                      <label for="date" class="col-xs-12 col-md-6">
+                      <label for="date" class="col-xs-12 col-sm-6">
                         <span>Date</span>
                         <input type="date">
                       </label>
-                      <label for="category" class="pull-right col-xs-12 col-md-6">
+                      <label for="category" class="pull-right col-xs-12 col-sm-6">
                         <div>
                           <span>Trier par</span>
                           <select name="category" id="category">
@@ -714,6 +885,19 @@
           } else {
             $('.menu-trigger').removeClass('close');
             TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
+          }
+        });
+        $('body').on("click",'.mobile-search .trigger',function(){
+          if( $('.mobile-filtres').css('top') != '85px' ) {
+            TweenMax.to('.mobile-filtres', 0.4, {top:85,ease:Power2.easeInOut,onComplete:function(){
+              $('body').css('overflow-y', 'hidden');
+              $('.mobile-filtres').addClass('opened');
+            }});
+          } else if ($('.mobile-filtres').hasClass('opened') ) {
+            TweenMax.to('.mobile-filtres', 0.4, {top:'100%',ease:Power2.easeOut,onComplete:function(){
+              $('body').css('overflow-y', 'auto');
+              $('.mobile-filtres').removeClass('opened');
+            }});
           }
         });
       });
