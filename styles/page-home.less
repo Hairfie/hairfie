@@ -286,6 +286,12 @@ section.home-section {
 				max-width: 265px;max-height: 265px;
 				padding: 0;
 				margin: 0 10px 10px 0;
+				@media screen and (max-width: @screen-xs-max) {
+					margin-right: 0;
+					width: 100%;
+					min-width: 100%;
+					max-height: 325px;
+				}
 				figcaption{ 
 					a:first-child {
 						margin-top: 80%;
@@ -299,6 +305,11 @@ section.home-section {
 	    padding-left: 0;
 	    height: 540px;
 
+		@media screen and (max-width: @screen-xs-max) {
+			height: 325px;
+			padding-right: 0;
+		}
+
 		figure {
 		    height: 100%;
 		    max-height: 540px;
@@ -306,6 +317,9 @@ section.home-section {
 			width: 100%;
 			padding: 0;
 
+			@media screen and (max-width: @screen-xs-max) {
+				height: 325px;
+			}
 
 		    figcaption{ 
 		    	font-size: 2.1em;
@@ -322,6 +336,9 @@ section.home-section {
 				}
 				a:first-child {
 					margin-top: 80%;
+					@media screen and (max-width: @screen-xs-max) {
+						margin-top: 50%;
+					}
 
 				}
 				a {margin-left: 20px;}

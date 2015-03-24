@@ -18,7 +18,7 @@
   <body>
     <section class="landing">
       <div class="container">
-        <header>
+        <header class="hidden-xs">
           <div class="row">
             <div class="col-md-12">
               <a href="index.html" class="logo col-md-4"></a>
@@ -55,6 +55,26 @@
             </div>
           </div>
         </header>   
+        
+        <div class="mobile-nav visible-xs-*">
+          <header class="container">
+              <a href="index.html" class="logo col-xs-4"></a>
+              <a href="#" class="col-xs-4 menu-trigger pull-right"></a>
+          </header>  
+          <div class="mobile-menu">
+            <div class="container">
+              <h2>Réservez votre coiffeur</h2>
+              <span class="hr"></span>
+              <div class="searchbar col-xs-10">
+                <input class='col-xs-12'type=search name=s placeholder='Où ?' >
+                <input class='col-xs-12'type=search name=s placeholder='Nom, spécialité...' >
+                <input type=date class='col-xs-12'/>
+                <a href="#" class='btn btn-red col-xs-12'>Lancer la recherche</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="headline  col-md-12">
             <h1>Réservez votre coiffeur</h1>
@@ -63,7 +83,7 @@
         </div>
 
         <div class="row">
-          <div class="searchbar main-searchbar">
+          <div class="searchbar main-searchbar hidden-xs">
             <div class="col-sm-6">
               <input class='col-xs-6'type=search name=s placeholder='Où ?' >
               <input class='col-xs-6'type=search name=s placeholder='Nom, spécialité...' >
@@ -362,9 +382,32 @@
 
         <script>
           $(document).ready(function() {
-            TweenMax.to('.landing header', 1, {opacity:1,ease:Power4.easeInut});
-            TweenMax.to('.headline', 0.7, {opacity:1,top:0,ease:Power4.easeInut,delay:0.5});
-            TweenMax.to('.searchbar', 0.7, {opacity:1,marginTop:'+=20',ease:Power4.easeOut,delay:0.65});
+            TweenMax.to('.landing header.hidden-xs-*', 1, {
+              opacity:1,
+              ease:Power4.easeInOut
+            });
+            TweenMax.to('.headline', 0.7, {
+              opacity:1,
+              top:0,
+              ease:Power4.easeInut,
+              delay:0.5
+            });
+            TweenMax.to('.searchbar.hidden-xs-*', 0.7, {
+              opacity:1,
+              marginTop:'+=20',
+              ease:Power4.easeOut,
+              delay:0.65
+            });
+            
+            $('body').on("click",'.mobile-nav .menu-trigger',function(){
+              if( $('.mobile-menu').height() == 0 ) {
+                $('.menu-trigger').addClass('close');
+                TweenMax.to('.mobile-menu', 0.4, {height:'100vh',ease:Power2.easeInOut});
+              } else {
+                $('.menu-trigger').removeClass('close');
+                TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
+              }
+            });
           });
         </script>
 
