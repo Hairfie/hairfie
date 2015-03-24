@@ -6537,6 +6537,78 @@ ul {
 }
 .main-searchbar {
   background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+.main-searchbar.open {
+  overflow: visible;
+}
+.main-searchbar.open .search-bar-extra {
+  height: auto;
+  opacity: 1;
+}
+.main-searchbar .search-bar-extra {
+  position: absolute;
+  top: 79%;
+  left: 25.2%;
+  width: 48.5%;
+  height: 0px;
+  opacity: 0;
+  background: white;
+  padding-top: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.main-searchbar .search-bar-extra div:first-child {
+  border-right: 1px solid #f2f2f2;
+}
+.main-searchbar .search-bar-extra div ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  line-height: 3.5em;
+  font-weight: 400;
+  color: #535353;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.main-searchbar .search-bar-extra div ul li:last-child {
+  border-bottom: 0;
+}
+.main-searchbar .search-bar-extra div ul li.heading,
+.main-searchbar .search-bar-extra div ul li.more {
+  background-color: #eeeeee;
+  border-radius: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.main-searchbar .search-bar-extra div ul li span {
+  font-weight: 300;
+}
+.main-searchbar .search-bar-extra div ul li a {
+  color: #535353;
+}
+.main-searchbar .search-bar-extra div ul li a:hover {
+  color: #535353;
+}
+.main-searchbar .search-bar-extra div.coiffeurs li:not(.heading) {
+  line-height: 1.2em;
+  text-align: left;
+  padding: 9px 0;
+}
+.main-searchbar .search-bar-extra div.coiffeurs li:not(.heading) a {
+  display: inline-block;
+}
+.main-searchbar .search-bar-extra div.coiffeurs li:not(.heading) img {
+  width: 33px;
+  max-width: 33px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
 }
 .main-searchbar input {
   float: left;
@@ -7222,7 +7294,6 @@ footer p {
   width: 100vw;
   background: url(../images/bg-landing.jpg) no-repeat top center;
   background-size: cover;
-  overflow: hidden;
   text-align: center;
   position: relative;
 }
@@ -7677,6 +7748,7 @@ section.home-footer .row > div p {
 @media screen and (max-width: 991px) {
   #content.search {
     margin-top: 85px;
+    padding-bottom: 85px;
   }
 }
 #content.search .breadcrumb {

@@ -92,6 +92,34 @@
               <input type=date class='col-xs-6'/>
               <a href="#" class='btn btn-red col-xs-6'>Trouvez votre coiffeur</a>
             </div>
+            <div class="search-bar-extra">
+              <div class="col-xs-6 coiffeurs">
+                <ul>
+                  <li class='heading'>Coiffeurs</li>
+                  <li><img src="images/placeholder-minisalon.jpg" alt="#"/><a href="#">Jean-Louis David <br>
+                  <span> 3 rue Choisy</span></a></li>
+                  <li><img src="images/placeholder-minisalon.jpg" alt="#"/><a href="#">Jean-Louis David <br>
+                  <span> 3 rue Choisy</span></a></li>
+                  <li><img src="images/placeholder-minisalon.jpg" alt="#"/><a href="#">Jean-Louis David <br>
+                  <span> 3 rue Choisy</span></a></li>
+                  <li><img src="images/placeholder-minisalon.jpg" alt="#"/><a href="#">Jean-Louis David <br>
+                  <span> 3 rue Choisy</span></a></li>
+                  <li><img src="images/placeholder-minisalon.jpg" alt="#"/><a href="#">Jean-Louis David <br>
+                  <span> 3 rue Choisy</span></a></li>
+                  <li class='heading'><a href="#">Voir tous les salons (253)</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-6 speciaites">
+                <ul>
+                  <li class='heading'>Spécialités</li>
+                  <li><a href="#">Coloration</a></li>
+                  <li><a href="#">Coloration</a></li>
+                  <li><a href="#">Coloration</a></li>
+                  <li><a href="#">Coloration</a></li>
+                  <li><a href="#">Coloration</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -382,7 +410,7 @@
 
         <script>
           $(document).ready(function() {
-            TweenMax.to('.landing header.hidden-xs-*', 1, {
+            TweenMax.to('.landing header.hidden-xs', 1, {
               opacity:1,
               ease:Power4.easeInOut
             });
@@ -392,7 +420,7 @@
               ease:Power4.easeInut,
               delay:0.5
             });
-            TweenMax.to('.searchbar.hidden-xs-*', 0.7, {
+            TweenMax.to('.searchbar.hidden-xs', 0.7, {
               opacity:1,
               marginTop:'+=20',
               ease:Power4.easeOut,
@@ -407,6 +435,10 @@
                 $('.menu-trigger').removeClass('close');
                 TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
               }
+            });
+
+            $('body').on('click','.main-searchbar input', function(){
+              $('.main-searchbar').toggleClass('open');
             });
           });
         </script>

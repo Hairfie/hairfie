@@ -207,7 +207,76 @@ ul {
 // Search bar home specific style
 .main-searchbar {
 	background-color: rgba(255,255,255,0.9);
-	
+	overflow: hidden;
+	position: relative;
+	&.open {
+		overflow: visible;
+		.search-bar-extra {
+			height: auto;
+			opacity: 1;
+		}
+	}
+	.search-bar-extra {
+		position: absolute;
+		top:79%; 
+		left: 25.2%;
+		width: 48.5%;height: 0px;
+		opacity: 0;
+		background: white;
+		padding-top: 20px;
+		border: 1px solid #f2f2f2;
+		border-radius: 3px;
+
+		.box-shadow(0 2px 3px rgba(0,0,0,0.1));
+		z-index: 999;
+		div {
+			&:first-child  {
+				border-right:1px solid #f2f2f2;
+			}
+			ul {
+				
+				li {
+					font-family: @font-second;
+					font-size: 1.4em;
+					line-height: 3.5em;
+					font-weight: @regular;
+					color: #535353;
+					letter-spacing: 1px;
+					border-bottom:1px solid #f2f2f2;
+					&:last-child {
+						border-bottom: 0;
+					}
+					&.heading, &.more {
+						background-color:#eeeeee;
+						border-radius: 2px; 
+						font-family: @font-main;
+						font-weight: @semiBold;
+					}
+					span {font-weight: @latoLight;}
+					a {color: #535353;&:hover {color: #535353;}}
+				}
+			}
+			&.coiffeurs {
+				li:not(.heading){
+		  			line-height: 1.2em;
+					text-align: left;
+					padding: 9px 0;
+
+		  			a {display: inline-block;}
+
+					img {
+						width: 33px;
+						max-width: 33px;
+						border-radius: 3px;
+						display: inline-block;
+						margin-right: 10px;
+						vertical-align: top;
+					}
+				}
+			}
+		}
+	}
+
 	input {
 		float: left;
 		padding-left: 20px;
