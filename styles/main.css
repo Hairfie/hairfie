@@ -7509,9 +7509,6 @@ section.home-section .btn.home-cta {
     margin-top: 0 !important;
   }
 }
-#home section:first-child .row {
-  padding: 0 15px;
-}
 @media screen and (max-width: 768px) {
   #home section:first-child .row > div {
     margin: 10px;
@@ -7525,6 +7522,12 @@ section.home-section .btn.home-cta {
   #home section:first-child .row .col-sm-4:nth-child(3) {
     padding-right: 15px !important;
   }
+}
+#home section:nth-child(2) .row > div:first-child {
+  padding-left: 0;
+}
+#home section:nth-child(2) .row > div:last-child {
+  padding-right: 0;
 }
 @media screen and (max-width: 768px) {
   #home section:nth-child(2) .row > div {
@@ -7606,42 +7609,31 @@ section.home-section .btn.home-cta {
   margin-right: -15px;
 }
 #home section:nth-child(3) .small-hairfies > div > div {
-  max-width: 265px;
-  max-height: 265px;
   padding: 0;
-  margin: 0 10px 10px 0;
 }
-@media screen and (max-width: 767px) {
-  #home section:nth-child(3) .small-hairfies > div > div {
-    margin-right: 0;
-    width: 100%;
-    min-width: 100%;
-    max-height: 325px;
-  }
+#home section:nth-child(3) .small-hairfies > div > div figure {
+  margin: 0 10px 10px 0;
 }
 #home section:nth-child(3) .small-hairfies > div > div figcaption a:first-child {
   margin-top: 80%;
 }
+@media screen and (max-width: 991px) {
+  #home section:nth-child(3) .small-hairfies > div > div figcaption a:first-child {
+    margin-top: 50%;
+  }
+}
 #home section:nth-child(3) .big {
   padding-left: 0;
-  height: 540px;
 }
 @media screen and (max-width: 767px) {
   #home section:nth-child(3) .big {
-    height: 325px;
     padding-right: 0;
   }
 }
 #home section:nth-child(3) .big figure {
-  max-height: 540px;
   height: 100%;
   width: 100%;
   padding: 0;
-}
-@media screen and (max-width: 767px) {
-  #home section:nth-child(3) .big figure {
-    height: 325px;
-  }
 }
 #home section:nth-child(3) .big figure figcaption {
   font-size: 2.1em;
@@ -7660,7 +7652,7 @@ section.home-section .btn.home-cta {
 #home section:nth-child(3) .big figure figcaption a:first-child {
   margin-top: 80%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #home section:nth-child(3) .big figure figcaption a:first-child {
     margin-top: 50%;
   }
