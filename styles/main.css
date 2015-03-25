@@ -6803,6 +6803,9 @@ input[type="checkbox"].checkbox-disabled:checked + span:after {
   margin: 20px auto;
   padding: 0;
   float: none !important;
+  width: auto;
+  display: inline-block;
+  margin-left: calc(50% - 140px);
 }
 .social-links li {
   display: inline-block;
