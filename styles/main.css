@@ -7257,6 +7257,15 @@ footer .hr {
   margin: 20px auto;
   float: none;
 }
+footer a.app-dl {
+  position: absolute;
+  width: 204px;
+  height: 64px;
+  background: url(../images/btn-app-dl.png) no-repeat center center;
+  background-size: 100%;
+  top: 50%;
+  right: 5%;
+}
 footer .footer-links {
   list-style-type: none;
   margin: 0 auto;
@@ -7264,7 +7273,16 @@ footer .footer-links {
   float: none !important;
 }
 footer .footer-links li {
-  padding-left: 0;
+  padding-left: 10px;
+  display: inline-block;
+  width: auto;
+  text-wrap: no-wrap;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  letter-spacing: .5px;
+}
+footer .footer-links li:first-child {
+  padding-left: 30px;
 }
 footer .footer-links li:last-child {
   position: relative;

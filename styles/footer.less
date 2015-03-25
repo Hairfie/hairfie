@@ -20,12 +20,29 @@ footer {
 	.hr {
 		.hr(#6b6b6b,2px,20px);
 	}
+	a.app-dl {
+		position: absolute;
+		width: 204px;height: 64px;
+		background: url(../images/btn-app-dl.png) no-repeat center center;
+		background-size: 100%;
+		top: 50%;
+		right: 5%;
+	}
 	.footer-links {
 		list-style-type: none;
 		margin: 0 auto;padding: 0;
 		.nofloat();
 		li {
-			padding-left: 0;
+			padding-left: 10px;
+			display: inline-block;
+			width: auto;
+			text-wrap: no-wrap;
+			font-family: @font-second;
+			font-size: 1em;
+			letter-spacing: .5px;
+			&:first-child {
+				padding-left: 30px;
+			}
 		}
 		li:last-child {
 			position: relative;
