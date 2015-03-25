@@ -6925,12 +6925,9 @@ input[type="checkbox"].checkbox-disabled:checked + span:after {
 }
 .comment-group input {
   height: 100%;
-  border: 1px solid #fafafb;
-  background-image: -webkit-linear-gradient(top, #f4f5f5 0%, #fcfcfc 100%);
-  background-image: linear-gradient(to bottom, #f4f5f5 0%, #fcfcfc 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f5f5', endColorstr='#fffcfcfc', GradientType=0);
+  border: 2px solid #fafafb;
   border-radius: 2px;
+  font-size: 1.4em;
 }
 .comment-group button {
   float: right;
