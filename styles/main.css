@@ -7542,9 +7542,24 @@ section.home-section .btn.home-cta {
 #home section:nth-child(2) .row > div:last-child {
   padding-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
+  #home section:nth-child(2) .row > div:nth-child(2) {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 767px) {
   #home section:nth-child(2) .row > div {
     margin-top: 20px !important;
+  }
+  #home section:nth-child(2) .row > div:nth-child(2) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #home section:nth-child(2) .row > div {
+    padding: 0;
   }
 }
 #home section:nth-child(2) figure {
@@ -7554,12 +7569,29 @@ section.home-section .btn.home-cta {
 #home section:nth-child(2) figure img {
   height: 275px;
 }
+@media screen and (max-width: 991px) {
+  #home section:nth-child(2) figure img {
+    height: auto;
+  }
+}
 #home section:nth-child(2) figure figcaption {
   height: 40%;
   bottom: 0;
   top: auto;
   background-color: rgba(0, 0, 0, 0.35);
   padding: 12px;
+}
+@media screen and (max-width: 991px) {
+  #home section:nth-child(2) figure figcaption {
+    height: 100% ;
+    padding-top: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #home section:nth-child(2) figure figcaption {
+    height: 100% ;
+    padding-top: 50%;
+  }
 }
 #home section:nth-child(2) figure figcaption p {
   margin-bottom: 0;
@@ -7591,12 +7623,30 @@ section.home-section .btn.home-cta {
 }
 #home section:nth-child(2) figure figcaption .icon-promo {
   position: absolute;
-  top: 25px;
+  top: -120%;
   right: 35px;
   width: 60px;
   height: 60px;
   background-size: 100%;
   line-height: 60px;
+}
+@media screen and (max-width: 991px) {
+  #home section:nth-child(2) figure figcaption .icon-promo {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 991px) {
+  #home section:nth-child(2) figure figcaption .icon-promo {
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1em;
+  }
 }
 #home section:nth-child(2) figure figcaption .stars {
   height: auto;

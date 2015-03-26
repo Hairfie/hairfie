@@ -202,8 +202,22 @@ section.home-section {
 		&:last-child {
 			padding-right: 0;
 		}
-		@media screen and (max-width: @screen-sm-min) {
+		@media screen and (max-width: @screen-sm-max) {
+			// margin-top: 20px !important;
+			&:nth-child(2) {
+				padding-left: 7px;
+				padding-right: 7px;
+			}
+		}
+		@media screen and (max-width: @screen-xs-max) {
 			margin-top: 20px !important;
+			&:nth-child(2) {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+		@media screen and (max-width: @screen-xs-max) {
+			padding: 0;
 		}
 	}
 	figure {
@@ -211,13 +225,25 @@ section.home-section {
 		cursor: pointer;
 		img {
 			height: 275px;
+			@media screen and (max-width: @screen-sm-max) {
+				height:auto;
+			}
 		}
 		figcaption {
 			height: 40%;
 			bottom:0; top: auto;
 			background-color: rgba(0,0,0,0.35);
 			padding: 12px;
-
+			
+			@media screen and (max-width: @screen-sm-max) {
+				height:100% ;
+				padding-top: 25%;
+			}
+			@media screen and (max-width: @screen-xs-max) {
+				height:100% ;
+				padding-top: 50%;
+			}
+			
 			p {
 				margin-bottom: 0;
 			}
@@ -248,9 +274,24 @@ section.home-section {
 			}
 			.icon-promo {
 				position: absolute;
-				top: 25px; right: 35px; 
+				top: -120%; right: 35px; 
 				width: 60px; height: 60px; 
 				background-size: 100%; line-height: 60px;
+
+				@media screen and (max-width: @screen-sm-max) {
+					
+					width: 35px;
+					height: 35px;
+					line-height: 35px;
+					font-size: .9em;
+				}
+				@media screen and (max-width: @screen-sm-max) {
+					top: 15px;
+					right: 15px;
+					width: 60px; height: 60px; 
+					line-height: 60px;
+					font-size: 1em;
+				}
 			}
 			.stars {
 				height: auto;
