@@ -101,7 +101,7 @@
 					color: white;	
 
 					@media screen and (max-width: @screen-xs-max) {
-						width: 95px;
+						width: auto;
 						text-align: center;
 					}
 				}
@@ -120,11 +120,14 @@
 						outline: none;
 					}
 					@media screen and (max-width: @screen-xs-max) {
-						width: 67%;
+						width: 58%;
 					}
 				}
 				input {
 					padding-left: 15px;
+					@media screen and (max-width: @screen-xs-max) {
+						width: 68.5%;
+					}
 					
 				}
 				select {
@@ -273,6 +276,14 @@
 		  					width: 50%;margin: 20px auto;
 		  				}
 
+					}
+				}
+				.rating {
+					@media screen and (max-width: @screen-xs-max) {
+						top: -85%;	
+						a {
+							color: @darkgrey;
+						}
 					}
 				}
 			}
@@ -471,7 +482,9 @@
   			left: 0; z-index: 998;
   			background-color: @bg3;
 			height: ~"calc(100vh - 130px)";
-			overflow: scroll;
+			max-width: 100%;
+			overflow-x: hidden;
+			width: 100%;
 			top: 100%;
 		}
 	}

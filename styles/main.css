@@ -7958,7 +7958,7 @@ section.home-footer .row > div p {
 }
 @media screen and (max-width: 767px) {
   #content.search .main-content .filters label span {
-    width: 95px;
+    width: auto;
     text-align: center;
   }
 }
@@ -7982,11 +7982,16 @@ section.home-footer .row > div p {
 @media screen and (max-width: 767px) {
   #content.search .main-content .filters label input,
   #content.search .main-content .filters label select {
-    width: 67%;
+    width: 58%;
   }
 }
 #content.search .main-content .filters label input {
   padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  #content.search .main-content .filters label input {
+    width: 68.5%;
+  }
 }
 #content.search .main-content .filters label select {
   padding: 15px 40px 15px 15px;
@@ -8132,6 +8137,14 @@ section.home-footer .row > div p {
   #content.search .main-content .tab-pane#adom section .image-bloc img {
     width: 50%;
     margin: 20px auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content.search .main-content .tab-pane#adom section .rating {
+    top: -85%;
+  }
+  #content.search .main-content .tab-pane#adom section .rating a {
+    color: #595959;
   }
 }
 #content.search .main-content .tab-pane#salons section {
@@ -8341,7 +8354,9 @@ section.home-footer .row > div p {
   z-index: 998;
   background-color: #f4f4f4;
   height: calc(100vh - 130px);
-  overflow: scroll;
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
   top: 100%;
 }
 /*////////////////////////////////

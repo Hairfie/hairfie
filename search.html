@@ -457,7 +457,7 @@
                       </li>
                       <li role="presentation" class="col-xs-4">
                         <span class="icon-nav"></span>
-                        <a href="#adom" aria-controls="adom" role="tab" data-toggle="tab"><span class="hidden-xs">Coiffeurs </span>à&nbsp;domicile</a>
+                        <a href="#adom" aria-controls="adom" role="tab" data-toggle="tab"><span class="hidden-xs">Coiffeurs&nbsp;à&nbsp;</span>domicile</a>
                       </li>
                       <li role="presentation" class="col-xs-4">
                         <span class="icon-nav"></span>
@@ -891,15 +891,15 @@
             TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
           }
         });
-        $('body').on("click",'.mobile-search .trigger-filters',function(){
+        $('body').on("click",'.trigger-filters',function(){
           if( $('.mobile-filtres').css('top') != '85px' ) {
             TweenMax.to('.mobile-filtres', 0.4, {top:85,ease:Power2.easeInOut,onComplete:function(){
-              $('body').css('overflow-y', 'hidden');
+              $('body').toggleClass('locked');
               $('.mobile-filtres').addClass('opened');
             }});
           } else if ($('.mobile-filtres').hasClass('opened') ) {
             TweenMax.to('.mobile-filtres', 0.4, {top:'100%',ease:Power2.easeOut,onComplete:function(){
-              $('body').css('overflow-y', 'auto');
+              $('body').toggleClass('locked');
               $('.mobile-filtres').removeClass('opened');
             }});
           }
