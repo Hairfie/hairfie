@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hairfie - Réservez votre coiffeur</title>
     <meta name="description" content="Réservez votre coiffeur">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -17,6 +18,9 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="mobile-screen hidden-md hidden-lg">
+      <a href="#" class="btn-red trigger-filters btn-mobile-fixed">Filtres</a>
+    </div>
     <div class="container">
       <header class="white hidden-xs hidden-sm">
           <div class="row">
@@ -86,7 +90,6 @@
 
     <div class="container search" id="content">
       <div class="mobile-search visible-sm visible-xs">
-          <a href="#" class="btn-red trigger">Filtres</a>
           <div class="mobile-filtres">
             <div class="sidebar col-xs-12">
               <section class='filter-recap'>
@@ -507,7 +510,7 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li >
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='hidden-xs'>
@@ -551,7 +554,7 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class='hidden-xs'>
@@ -617,7 +620,7 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class="hidden-xs">
@@ -661,7 +664,7 @@
                               <li>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
-                              <li>
+                              <li class='hidden-xs'>
                                 <a href="#"><img src="images/placeholder-hairfie-thumb.jpg" alt=""></a>
                               </li>
                               <li class="hidden-xs">
@@ -888,7 +891,7 @@
             TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
           }
         });
-        $('body').on("click",'.mobile-search .trigger',function(){
+        $('body').on("click",'.mobile-search .trigger-filters',function(){
           if( $('.mobile-filtres').css('top') != '85px' ) {
             TweenMax.to('.mobile-filtres', 0.4, {top:85,ease:Power2.easeInOut,onComplete:function(){
               $('body').css('overflow-y', 'hidden');

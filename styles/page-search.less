@@ -201,6 +201,15 @@
 					letter-spacing: 1px;
 					float:right;
 				}
+				@media screen and (max-width: @screen-xs-max) {
+					top: -120%;
+  					right: 3%;
+  					a {
+  						color: white;
+  						font-weight: @semiBold;
+						font-size: 1.2em;
+  					}
+				}
 			}
 			.inline-promo {
 				text-align: left;
@@ -454,17 +463,8 @@
 	.mobile-search {
 		position: relative;
 		width: 100vw;
-		.btn-red.trigger {
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			height: 65px;
-			z-index: 999;
-			text-align: center;
-			left: 0;
-			line-height: 65px;
-			letter-spacing: 2px;
-			font-size: 2em;
+		.btn-red.trigger-filters {
+			
 		}	
 		.mobile-filtres {
 			position: fixed;

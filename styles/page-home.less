@@ -227,6 +227,7 @@ section.home-section {
 			height: 275px;
 			@media screen and (max-width: @screen-sm-max) {
 				height:auto;
+				min-height: 200px;
 			}
 		}
 		figcaption {
@@ -274,16 +275,15 @@ section.home-section {
 			}
 			.icon-promo {
 				position: absolute;
-				top: -120%; right: 35px; 
+				top: -130%; right: 20px; 
 				width: 60px; height: 60px; 
 				background-size: 100%; line-height: 60px;
 
 				@media screen and (max-width: @screen-sm-max) {
-					
-					width: 35px;
-					height: 35px;
-					line-height: 35px;
-					font-size: .9em;
+					width: 35px !important;
+					height: 35px !important;
+					line-height: 35px !important;
+					font-size: .9em !important;
 				}
 				@media screen and (max-width: @screen-sm-max) {
 					top: 15px;

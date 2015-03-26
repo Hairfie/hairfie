@@ -6299,7 +6299,10 @@ body {
 }
 @media screen and (max-width: 767px) {
   body {
+    position: relative;
     overflow-x: hidden !important;
+    width: 100% !important;
+    width: 100vw !important;
     max-width: 767px !important;
   }
 }
@@ -6720,6 +6723,11 @@ figure figcaption .pricetag {
   text-decoration: none;
   background-color: #3f3f3f;
 }
+@media screen and (max-width: 767px) {
+  .tag {
+    margin-top: 5px;
+  }
+}
 .icon-promo {
   float: left;
   width: 34px;
@@ -7000,6 +7008,26 @@ input[type="checkbox"].checkbox-disabled:checked + span:after {
 .comments .single-comment div .like-group a:first-child:hover:before,
 .comments .single-comment div .like-group a:first-child:active:before {
   color: #fc5a5f;
+}
+.mobile-screen {
+  position: absolute;
+  z-index: 999;
+  min-width: 100%;
+  width: 100vw;
+  height: 65px;
+  bottom: 0;
+}
+.btn-mobile-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 999;
+  text-align: center;
+  left: 0;
+  line-height: 65px;
+  letter-spacing: 2px;
+  font-size: 2em;
 }
 header {
   width: 100%;
@@ -7572,6 +7600,7 @@ section.home-section .btn.home-cta {
 @media screen and (max-width: 991px) {
   #home section:nth-child(2) figure img {
     height: auto;
+    min-height: 200px;
   }
 }
 #home section:nth-child(2) figure figcaption {
@@ -7623,8 +7652,8 @@ section.home-section .btn.home-cta {
 }
 #home section:nth-child(2) figure figcaption .icon-promo {
   position: absolute;
-  top: -120%;
-  right: 35px;
+  top: -130%;
+  right: 20px;
   width: 60px;
   height: 60px;
   background-size: 100%;
@@ -7632,10 +7661,10 @@ section.home-section .btn.home-cta {
 }
 @media screen and (max-width: 991px) {
   #home section:nth-child(2) figure figcaption .icon-promo {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: .9em;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    font-size: .9em !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -8038,6 +8067,17 @@ section.home-footer .row > div p {
   letter-spacing: 1px;
   float: right;
 }
+@media screen and (max-width: 767px) {
+  #content.search .main-content .tab-pane section .rating {
+    top: -120%;
+    right: 3%;
+  }
+  #content.search .main-content .tab-pane section .rating a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+}
 #content.search .main-content .tab-pane section .inline-promo {
   text-align: left;
   width: 100%;
@@ -8295,18 +8335,6 @@ section.home-footer .row > div p {
   position: relative;
   width: 100vw;
 }
-#content.search .mobile-search .btn-red.trigger {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 65px;
-  z-index: 999;
-  text-align: center;
-  left: 0;
-  line-height: 65px;
-  letter-spacing: 2px;
-  font-size: 2em;
-}
 #content.search .mobile-search .mobile-filtres {
   position: fixed;
   left: 0;
@@ -8324,10 +8352,20 @@ section.home-footer .row > div p {
   background: url(../images/placeholder-salon-img.jpg) no-repeat center center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .carousel-inner .item {
+    height: 380px;
+  }
+}
 .carousel-inner .item .outer-img {
   position: relative;
   width: 100%;
   height: 470px;
+}
+@media screen and (max-width: 767px) {
+  .carousel-inner .item .outer-img {
+    height: 380px;
+  }
 }
 .carousel-inner .item .outer-img img {
   position: absolute;
@@ -8379,6 +8417,11 @@ section.home-footer .row > div p {
   background-color: white;
   padding-left: 35px;
 }
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .row {
+    padding-left: 15px;
+  }
+}
 .salon#content .main-content section.salon-info .row:first-child {
   margin-top: -105px;
   width: auto;
@@ -8386,6 +8429,12 @@ section.home-footer .row > div p {
   padding-left: 35px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .row:first-child {
+    padding-left: 15px;
+    border-radius: 0px;
+  }
 }
 .salon#content .main-content section.salon-info .row:first-child h1 {
   margin-top: 0;
@@ -8420,6 +8469,11 @@ section.home-footer .row > div p {
 .salon#content .main-content section.salon-info .social {
   height: auto;
   padding: 20px 0px 40px 35px;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .social {
+    padding-left: 15px;
+  }
 }
 .salon#content .main-content section.salon-info .social div.twitter {
   padding-right: 0;
@@ -8487,6 +8541,12 @@ section.home-footer .row > div p {
   padding-right: 50px;
   padding-bottom: 35px;
   border-bottom: 2px solid #f9f9f9;
+}
+@media screen and (max-width: 767px) {
+  .salon#content section.salon-content section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .salon#content section.salon-content section h4 {
   color: #343434;
@@ -8661,6 +8721,9 @@ section.home-footer .row > div p {
 }
 .salon#content .sidebar .related-content .rival:last-child {
   border: none;
+}
+.salon#content .sidebar .related-content .rival a:first-child {
+  overflow: hidden;
 }
 .salon#content .sidebar .related-content .rival a:nth-child(2) {
   font-size: 1.4em;
