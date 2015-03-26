@@ -8519,6 +8519,16 @@ section.home-footer .row > div p {
   position: absolute;
   left: 38px;
 }
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .social a {
+    padding: 20px;
+    width: auto;
+  }
+  .salon#content .main-content section.salon-info .social a .socicon {
+    top: 10px;
+    left: 29px;
+  }
+}
 .salon#content .main-content section.salon-info .social a.facebook:hover {
   background-color: #6788ce;
   border-color: #6788ce;
