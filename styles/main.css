@@ -7213,7 +7213,7 @@ header:not(.white) .dropdown-menu a:hover {
 }
 .mobile-nav .mobile-menu > .container {
   overflow-x: scroll;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
 .mobile-nav .mobile-menu h2 {
   margin: 85px 0;
