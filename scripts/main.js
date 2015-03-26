@@ -5,3 +5,10 @@ TweenMax.set('.landing header.hidden-xs', {opacity:0});
 TweenMax.set('#content.salon .main-content', {top:20,opacity:0});
 TweenMax.set('.hairfie-singleView .single-view', {marginTop:60,opacity:0});
 TweenMax.set('.hairfie-singleView .related-hairfies', {marginTop:20,opacity:0});
+
+function setMobileSize() {
+  
+    var winW = $(window).width() + 'px';
+    TweenMax.set('body, body > div', {width:winW,maxWidth:winW,overflowX:'hidden'});
+
+}

@@ -16,6 +16,7 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="is-mobile visible-xs"></div>
     <section class="landing">
       <div class="container">
         <header class="hidden-xs">
@@ -409,6 +410,8 @@
 
         <script>
           $(document).ready(function() {
+            setMobileSize();
+
             TweenMax.to('.landing header.hidden-xs', 1, {
               opacity:1,
               ease:Power4.easeInOut
@@ -441,6 +444,9 @@
             $('body').on('click','.main-searchbar input', function(){
               $('.main-searchbar').toggleClass('open');
             });
+
+            
+            
           });
         </script>
 

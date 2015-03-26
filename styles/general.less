@@ -11,10 +11,10 @@ body {
 
 	@media screen and(max-width: @screen-xs-max) {
 		position: relative;
-		overflow-x: hidden !important;
-		width: 100% !important;
-		width: 100vw !important;
-    	max-width:100% !important; 
+	// 	overflow-x: hidden !important;
+	// 	width: 100% !important;
+	// 	width: 100vw !important;
+ //    	max-width:100% !important; 
 	}
 	&.locked {
 		overflow: hidden !important; 
@@ -340,6 +340,7 @@ figure {
 	figcaption {
 		position: absolute;
 		width: 100%; height: 100%;
+		z-index: 9;
 		.transition(all 0.3s ease-out);
 		.pricetag {
 			position: absolute;	top: 15px; left: 15px;
@@ -665,5 +666,11 @@ input[type="checkbox"].checkbox-disabled:not(:checked) + span:after, input[type=
 	// 	max-width: @screen-xs-max;
 	// }
 }
-	
-	
+.is-visible {
+	display: none !important;
+	visibility: hidden !important;
+	@media screen and (maw-width: @screen-xs-max) {
+		visibility: visible !important;
+		display: block !important;
+	}
+	}

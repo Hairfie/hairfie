@@ -862,6 +862,15 @@
     
     <script type='text/javascript'>
       $(document).ready(function(){
+        
+        if ($('.is-visible:visible')) { 
+          setMobileSize();
+          window.addEventListener('resize', function(event){
+            setMobileSize();
+          });
+        }
+        
+
         $('#rangeslider').slider({
           range: true,
           min: 0,
