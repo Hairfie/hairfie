@@ -120,6 +120,11 @@
 					}
 				}
 				a.facebook {
+					@media screen and (max-width: @screen-xs-max) {
+						background-color: #6788ce;
+						border-color: #6788ce;
+						color: white;
+					}
 					&:hover {
 						background-color: #6788ce;
 						border-color: #6788ce;
@@ -127,6 +132,11 @@
 					}
 				}
 				a.twitter {
+					@media screen and (max-width: @screen-xs-max) {
+						background-color: #29c5f6;
+						border-color: #29c5f6;
+						color: white;
+					}
 					&:hover {
 						background-color: #29c5f6;
 						border-color: #29c5f6;
@@ -280,6 +290,9 @@
 					height: 25px;
 					left: 70px;
 					top: 21px;
+					@media screen and (max-width: @screen-xs-max) {
+						left: 25px;
+					}
 				}
 			}
 		}
@@ -298,6 +311,9 @@
 				.box-shadow(0px 1px 3px rgba(0,0,0,0.1));
 				.icon-promo {
 					float:none;margin-right: 10px;
+				}
+				@media screen and (max-width: @screen-xs-max) {
+  					font-size: 1.6em !important;
 				}
 			}
 			.btn-red {
@@ -319,6 +335,9 @@
 			padding: 5px 20px 0px 20px;
 			margin-top: 15px;
 			margin-bottom: 20px;
+			@media screen and (max-width: @screen-xs-max) {
+				padding-left: 30px;
+			}
 
 			h5 {
 				color: @darkgrey;
@@ -335,6 +354,9 @@
 				}
 				a:first-child {
 					overflow: hidden;
+					@media screen and (max-width: @screen-xs-max) {
+						padding-left: 0;
+					}
 				}
 				a:nth-child(2) {
 					font-size: 1.4em;
@@ -388,6 +410,9 @@
 				padding: 20px;
 				margin: 10px auto;
 				width: 78%;
+				@media screen and (max-width: @screen-xs-max) {
+					width: 100%;
+				}
 				li {
 					margin-right: 10px;
 					&:last-child {margin-right: 0;}

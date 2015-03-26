@@ -573,6 +573,11 @@ input[type="checkbox"].checkbox-disabled:not(:checked) + span:after, input[type=
 	button {
 		float: right;
 		text-transform: uppercase;
+		@media screen and (max-width: @screen-xs-max) {
+			width: 2.3em;
+			display: block;
+			height: 99%;
+		}
 	}
 }
 .comments {

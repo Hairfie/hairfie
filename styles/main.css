@@ -6950,6 +6950,13 @@ input[type="checkbox"].checkbox-disabled:checked + span:after {
   float: right;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .comment-group button {
+    width: 2.3em;
+    display: block;
+    height: 99%;
+  }
+}
 .comments .single-comment {
   border-bottom: 1px solid #f9f9f9;
   padding: 20px;
@@ -8529,10 +8536,24 @@ section.home-footer .row > div p {
     left: 29px;
   }
 }
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .social a.facebook {
+    background-color: #6788ce;
+    border-color: #6788ce;
+    color: white;
+  }
+}
 .salon#content .main-content section.salon-info .social a.facebook:hover {
   background-color: #6788ce;
   border-color: #6788ce;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .main-content section.salon-info .social a.twitter {
+    background-color: #29c5f6;
+    border-color: #29c5f6;
+    color: white;
+  }
 }
 .salon#content .main-content section.salon-info .social a.twitter:hover {
   background-color: #29c5f6;
@@ -8691,6 +8712,11 @@ section.home-footer .row > div p {
   left: 70px;
   top: 21px;
 }
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .phone .btn-red:after {
+    left: 25px;
+  }
+}
 .salon#content .sidebar .promo-sidebar .inline-promo {
   background-color: white;
   font-size: 2.1em !important;
@@ -8708,6 +8734,11 @@ section.home-footer .row > div p {
 .salon#content .sidebar .promo-sidebar .inline-promo .icon-promo {
   float: none;
   margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .promo-sidebar .inline-promo {
+    font-size: 1.6em !important;
+  }
 }
 .salon#content .sidebar .promo-sidebar .btn-red {
   display: block;
@@ -8733,6 +8764,11 @@ section.home-footer .row > div p {
   margin-top: 15px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .related-content {
+    padding-left: 30px;
+  }
+}
 .salon#content .sidebar .related-content h5 {
   color: #595959;
   font-size: 1.6em;
@@ -8749,6 +8785,11 @@ section.home-footer .row > div p {
 }
 .salon#content .sidebar .related-content .rival a:first-child {
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .related-content .rival a:first-child {
+    padding-left: 0;
+  }
 }
 .salon#content .sidebar .related-content .rival a:nth-child(2) {
   font-size: 1.4em;
@@ -8799,6 +8840,11 @@ section.home-footer .row > div p {
   padding: 20px;
   margin: 10px auto;
   width: 78%;
+}
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .networks ul {
+    width: 100%;
+  }
 }
 .salon#content .sidebar .networks ul li {
   margin-right: 10px;
