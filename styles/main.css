@@ -6293,7 +6293,7 @@ body {
   font-weight: 200;
   width: 100%;
   height: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
   background-color: #f4f4f4;
 }
@@ -6303,7 +6303,7 @@ body {
     overflow-x: hidden !important;
     width: 100% !important;
     width: 100vw !important;
-    max-width: 767px !important;
+    max-width: 100% !important;
   }
 }
 body.locked {
@@ -7186,6 +7186,7 @@ header:not(.white) .dropdown-menu a:hover {
   margin-left: -15px;
   margin-right: -15px;
   width: 100vw;
+  max-width: 100%;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -7216,6 +7217,7 @@ header:not(.white) .dropdown-menu a:hover {
   top: 85px;
   height: 0px;
   width: 100vw;
+  max-width: 100%;
   overflow-x: auto;
 }
 .mobile-nav .mobile-menu > .container {
@@ -7360,6 +7362,7 @@ footer p {
 .landing {
   height: 610px;
   width: 100vw;
+  max-width: 100%;
   background: url(../images/bg-landing.jpg) no-repeat top center;
   background-size: cover;
   text-align: center;
@@ -7626,7 +7629,7 @@ section.home-section .btn.home-cta {
 @media screen and (max-width: 767px) {
   #home section:nth-child(2) figure figcaption {
     height: 100% ;
-    padding-top: 50%;
+    padding-top: 35%;
   }
 }
 #home section:nth-child(2) figure figcaption p {
