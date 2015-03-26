@@ -669,8 +669,9 @@ input[type="checkbox"].checkbox-disabled:not(:checked) + span:after, input[type=
 .is-visible {
 	display: none !important;
 	visibility: hidden !important;
-	@media screen and (maw-width: @screen-xs-max) {
+	opacity: 0;
+	@media screen and (max-width: @screen-xs-max) {
 		visibility: visible !important;
 		display: block !important;
 	}
-	}
+}

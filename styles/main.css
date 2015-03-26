@@ -7036,8 +7036,9 @@ input[type="checkbox"].checkbox-disabled:checked + span:after {
 .is-visible {
   display: none !important;
   visibility: hidden !important;
+  opacity: 0;
 }
-@media screen and (maw-width: 767px) {
+@media screen and (max-width: 767px) {
   .is-visible {
     visibility: visible !important;
     display: block !important;
