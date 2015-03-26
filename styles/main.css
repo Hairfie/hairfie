@@ -6297,6 +6297,15 @@ body {
   overflow-x: hidden;
   background-color: #f4f4f4;
 }
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+    max-width: 767px !important;
+  }
+}
+body.locked {
+  overflow: hidden !important;
+}
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -7172,7 +7181,11 @@ header:not(.white) .dropdown-menu a:hover {
   top: 85px;
   height: 0px;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: auto;
+}
+.mobile-nav .mobile-menu > .container {
+  overflow-x: scroll;
+  padding-bottom: 100px;
 }
 .mobile-nav .mobile-menu h2 {
   margin: 85px 0;
