@@ -18,11 +18,8 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div class="helpers">
-      <div class="is-visible"></div>
-      <div class="mobile-screen hidden-md hidden-lg">
-        <a href="#" class="btn-red trigger-filters btn-mobile-fixed">Filtres</a>
-      </div>
+    <div class="mobile-screen hidden-md hidden-lg">
+      <a href="#" class="btn-red trigger-filters btn-mobile-fixed">Filtres</a>
     </div>
       
     <div class="container">
@@ -867,11 +864,8 @@
     <script type='text/javascript'>
       $(document).ready(function(){
         
-        if ($('.is-visible:visible')) { 
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           setMobileSize();
-          window.addEventListener('resize', function(event){
-            setMobileSize();
-          });
         }
         
 

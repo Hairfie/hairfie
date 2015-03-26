@@ -8,9 +8,11 @@ TweenMax.set('.hairfie-singleView .related-hairfies', {marginTop:20,opacity:0});
 
 function setMobileSize() {
 
-	if ($('.is-visible:visible')) {
-	    var winW = $(window).width() + 'px';
-	    TweenMax.set('body, body > div', {width:winW,maxWidth:winW,overflowX:'hidden'});	
-	}
+    var winW = $(window).width() + 'px';
+    TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+
+    $(window).resize(function(){
+    	TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+    });
 
 }

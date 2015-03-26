@@ -8387,7 +8387,7 @@ section.home-footer .row > div p {
 }
 @media screen and (max-width: 767px) {
   .carousel-inner .item {
-    height: 380px;
+    height: 320px;
   }
 }
 .carousel-inner .item .outer-img {
@@ -8397,7 +8397,7 @@ section.home-footer .row > div p {
 }
 @media screen and (max-width: 767px) {
   .carousel-inner .item .outer-img {
-    height: 380px;
+    height: 320px;
   }
 }
 .carousel-inner .item .outer-img img {
@@ -8465,6 +8465,7 @@ section.home-footer .row > div p {
 }
 @media screen and (max-width: 767px) {
   .salon#content .main-content section.salon-info .row:first-child {
+    margin-top: 0;
     padding-left: 15px;
     border-radius: 0px;
   }
