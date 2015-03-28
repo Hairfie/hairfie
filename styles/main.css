@@ -6085,9 +6085,19 @@ span.arrow-left {
   background: url(../images/arrow-left.png) no-repeat center center;
   left: 60px;
 }
+@media screen and (max-width: 991px) {
+  span.arrow-left {
+    margin-top: 20px;
+  }
+}
 span.arrow-right {
   background: url(../images/arrow-right.png) no-repeat center center;
   right: 60px;
+}
+@media screen and (max-width: 991px) {
+  span.arrow-right {
+    margin-top: 20px;
+  }
 }
 .cal {
   display: block;
@@ -7233,10 +7243,10 @@ header:not(.white) .dropdown-menu a:hover {
   padding-bottom: 180px;
 }
 .mobile-nav .mobile-menu h2 {
-  margin: 85px 0;
+  margin: 40px 0;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 2.6em;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #535353;
@@ -7246,7 +7256,7 @@ header:not(.white) .dropdown-menu a:hover {
   width: 96px;
   height: 1px;
   background: #535353;
-  margin: 0 auto 85px;
+  margin: 0 auto 40px;
   display: block;
 }
 .mobile-nav .mobile-menu .searchbar {
@@ -8463,7 +8473,7 @@ section.home-footer .row > div p {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .salon#content .main-content section.salon-info .row:first-child {
     margin-top: 0;
     padding-left: 15px;
@@ -8752,6 +8762,11 @@ section.home-footer .row > div p {
     font-size: 1.6em !important;
   }
 }
+@media screen and (max-width: 991px) {
+  .salon#content .sidebar .promo-sidebar .inline-promo {
+    text-align: center;
+  }
+}
 .salon#content .sidebar .promo-sidebar .btn-red {
   display: block;
   font-weight: 600;
@@ -8775,6 +8790,11 @@ section.home-footer .row > div p {
   padding: 5px 20px 0px 20px;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  .salon#content .sidebar .related-content {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .salon#content .sidebar .related-content {
@@ -8839,6 +8859,12 @@ section.home-footer .row > div p {
 .salon#content .sidebar .networks {
   margin-bottom: 60px;
 }
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .networks {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .salon#content .sidebar .networks p {
   text-align: center;
   color: #595959;
@@ -8848,23 +8874,29 @@ section.home-footer .row > div p {
   margin-bottom: 0;
   margin-top: 0;
 }
-.salon#content .sidebar .networks ul {
+.salon#content .sidebar .networks .social-links {
   padding: 20px;
   margin: 10px auto;
   width: 78%;
 }
-@media screen and (max-width: 767px) {
-  .salon#content .sidebar .networks ul {
+@media screen and (max-width: 991px) {
+  .salon#content .sidebar .networks .social-links {
     width: 100%;
+    margin-left: 30px;
   }
 }
-.salon#content .sidebar .networks ul li {
+@media screen and (max-width: 767px) {
+  .salon#content .sidebar .networks .social-links {
+    margin-left: 0;
+  }
+}
+.salon#content .sidebar .networks .social-links li {
   margin-right: 10px;
 }
-.salon#content .sidebar .networks ul li:last-child {
+.salon#content .sidebar .networks .social-links li:last-child {
   margin-right: 0;
 }
-.salon#content .sidebar .networks ul li a {
+.salon#content .sidebar .networks .social-links li a {
   width: 38px;
   box-sizing: border-box;
   color: #595959;
@@ -8876,7 +8908,7 @@ section.home-footer .row > div p {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
 }
-.salon#content .sidebar .networks ul li a:after {
+.salon#content .sidebar .networks .social-links li a:after {
   content: " ";
   position: absolute;
   width: calc(100% + 4px);
@@ -8892,7 +8924,7 @@ section.home-footer .row > div p {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
 }
-.salon#content .sidebar .networks ul li a:hover {
+.salon#content .sidebar .networks .social-links li a:hover {
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -8901,7 +8933,7 @@ section.home-footer .row > div p {
   color: #595959 !important;
   background-color: transparent !important;
 }
-.salon#content .sidebar .networks ul li a:hover:after {
+.salon#content .sidebar .networks .social-links li a:hover:after {
   opacity: 1;
 }
 /*////////////////////////////////
