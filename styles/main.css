@@ -6685,6 +6685,11 @@ ul {
   padding: 6px 42px;
   width: auto;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .searchbar.small-search .btn-red {
+    padding: 6px 10px;
+  }
+}
 figure {
   position: relative;
 }
@@ -9459,7 +9464,7 @@ section.home-footer .row > div p {
   top: 0;
   height: 30px;
   width: 40px;
-  line-height: 10;
+  line-height: 10px;
   background: white;
   border: 1px solid #eeeeee;
   border-radius: 0;
@@ -9472,14 +9477,6 @@ section.home-footer .row > div p {
 #content.reservation.confirmation label[for='cgu'] a {
   font-size: 1em;
   color: #848b95;
-}
-#content.reservation.confirmation label[for='cgu'] input[type="checkbox"] + span {
-  padding-left: 20px;
-}
-#content.reservation.confirmation label[for='cgu'] input[type="checkbox"]:not(:checked) + span:before,
-#content.reservation.confirmation label[for='cgu'] input[type="checkbox"]:checked + span:before {
-  left: -10px;
-  top: 0;
 }
 #content.reservation.confirmation .btn-red {
   display: block;
