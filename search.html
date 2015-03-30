@@ -144,7 +144,7 @@
                   <div class='price'>
                     <h2>Fourchette de prix</h2>  
                     <div class="selectRange">
-                      <div id="rangeslider"></div>
+                      <div class='rangeslider' id="rangeslider-mobile"></div>
                       <p class="col-xs-6">10€</p>
                       <p class="col-xs-6">1000€</p>
                     </div>
@@ -323,8 +323,7 @@
               <div class='price'>
                 <h2>Fourchette de prix</h2>  
                 <div class="selectRange">
-                  <div id="rangeslider"></div>
-                  <div id="rangeval"></div>
+                  <div class='rangeslider' id="rangeslider"></div>
                   <p class="col-xs-6">10€</p>
                   <p class="col-xs-6">1000€</p>
                 </div>
@@ -875,9 +874,18 @@
           min: 0,
           max: 1000,
           values: [ 200, 500 ],
-          slide: function( event, ui ) {
-            $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
-          }
+          // slide: function( event, ui ) {
+          //   $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
+          // }
+        });
+        $('#rangeslider-mobile').slider({
+          range: true,
+          min: 0,
+          max: 1000,
+          values: [ 200, 500 ],
+          // slide: function( event, ui ) {
+          //   $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
+          // }
         });
         $('.dropdown-toggle').dropdown();
         $('a[href="#salons"]').on('click', function(){
