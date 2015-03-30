@@ -8745,6 +8745,16 @@ section.home-footer .row > div p {
   left: 70px;
   top: 21px;
 }
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .salon#content .sidebar .phone .btn-red:after {
+    left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .salon#content .sidebar .phone .btn-red:after {
+    left: 20%;
+  }
+}
 @media screen and (max-width: 767px) {
   .salon#content .sidebar .phone .btn-red:after {
     left: 25px;
@@ -8888,18 +8898,9 @@ section.home-footer .row > div p {
 .salon#content .sidebar .networks .social-links {
   padding: 20px;
   margin: 10px auto;
-  width: 78%;
-}
-@media screen and (max-width: 991px) {
-  .salon#content .sidebar .networks .social-links {
-    width: 100%;
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .salon#content .sidebar .networks .social-links {
-    margin-left: 0;
-  }
+  width: 280px;
+  margin-left: 8%;
+  margin-left: calc(50% - 140px);
 }
 .salon#content .sidebar .networks .social-links li {
   margin-right: 10px;
