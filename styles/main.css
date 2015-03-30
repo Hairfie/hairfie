@@ -9343,8 +9343,10 @@ section.home-footer .row > div p {
 }
 #content.reservation.confirmation p,
 #content.reservation.confirmation a,
-#content.reservation.confirmation label {
+#content.reservation.confirmation label,
+#content.reservation.confirmation select {
   font-size: 1.4em;
+  color: #848b95;
 }
 #content.reservation.confirmation .legend.conf + a {
   text-decoration: underline;
@@ -9388,6 +9390,22 @@ section.home-footer .row > div p {
   text-align: center;
   line-height: 45px;
 }
+#content.reservation.confirmation .confirm-bloc-form form input,
+#content.reservation.confirmation .confirm-bloc-form form select {
+  height: 30px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+#content.reservation.confirmation .confirm-bloc-form form input:focus,
+#content.reservation.confirmation .confirm-bloc-form form select:focus {
+  outline: none;
+}
+#content.reservation.confirmation .confirm-bloc-form form select {
+  font-size: 1em;
+  border-radius: 0 !important;
+}
 #content.reservation.confirmation .confirm-bloc-form form label {
   width: 100%;
   padding-left: 40px;
@@ -9402,13 +9420,15 @@ section.home-footer .row > div p {
   top: 3px;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for="infos"] select {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for="infos"] input {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for="infos"] input:last-child {
   margin-right: 0;
+  padding-left: 13px;
+  width: auto !important;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for='email'] .icon {
   background: url(../images/icon-resa-mail.png) no-repeat center left;
@@ -9428,14 +9448,21 @@ section.home-footer .row > div p {
   display: inline-block;
   width: auto;
   font-size: 1em;
+  font-weight: 200;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for='discount'] input {
   width: 60%;
 }
 #content.reservation.confirmation .confirm-bloc-form form label[for='discount'] button {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
+  height: 30px;
+  width: 40px;
+  line-height: 10;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 0;
 }
 #content.reservation.confirmation label[for='cgu'] {
   display: block;
@@ -9465,6 +9492,7 @@ section.home-footer .row > div p {
   height: 55px;
   line-height: 40px;
   font-weight: 600;
+  color: white;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
