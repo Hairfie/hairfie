@@ -324,6 +324,7 @@
                 <h2>Fourchette de prix</h2>  
                 <div class="selectRange">
                   <div id="rangeslider"></div>
+                  <div id="rangeval"></div>
                   <p class="col-xs-6">10€</p>
                   <p class="col-xs-6">1000€</p>
                 </div>
@@ -875,7 +876,7 @@
           max: 1000,
           values: [ 200, 500 ],
           slide: function( event, ui ) {
-            // $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
+            $('#rangeval').html(ui.values[0]+" - "+ui.values[1]);
           }
         });
         $('.dropdown-toggle').dropdown();

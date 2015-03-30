@@ -5,6 +5,8 @@ Adresse des pages :
 - Salon : http://lucasfayolle.com/hairfie/salon.html
 - Search : http://lucasfayolle.com/hairfie/search.html
 - Hairfie : http://lucasfayolle.com/hairfie/hairfie.html
+- Reservation : http://lucasfayolle.com/hairfie/reservation.html
+- Confirmation : http://lucasfayolle.com/hairfie/confirm-reservation.html
 
 # Config
 

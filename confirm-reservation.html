@@ -1,0 +1,213 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hairfie - Réservez votre coiffeur</title>
+    <meta name="description" content="Réservez votre coiffeur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="white">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html" class="logo col-md-4"></a>
+              <nav class='col-md-8 pull-right'>
+                <ul>
+                  <li><a href="#">Inscription</a></li>
+                  <li><a href="#">Connexion</a></li>
+                  <li class="user">
+                    <div class="dropdown">
+                      <img src="images/placeholder-user-pp.jpg" alt="#">
+                      <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                        Natasha
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li>
+                            <a href="salon.html">Salon</a>
+                          </li>
+                          <li>
+                            <a href="search.html">Search</a>
+                          </li>
+                          <li>
+                            <a href="hairfie.html">Hairfie</a>
+                          </li>
+                          <li>
+                            <a href="reservation.html">Résa</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- <li><a href="#" class="btn btn-red hide">Déclarez votre salon</a></li> -->
+                </ul>  
+              </nav>
+            </div>
+          </div>
+      </header>    
+    </div>
+
+    <div class="container reservation confirmation" id="content" >
+      <div class="row">
+        <div class="sidebar col-sm-3">
+          <div class="salon-bloc">
+            <a href="salon.html"><img src="images/placeholder-salon-thumb.jpg" alt="#"></a>
+            <div class="address-bloc">
+              <h2><a href="#">Alexandre de Paris</a></h2>
+              <a href="salon.html" class="address">1 rue Vivienne, 75001, Paris</a>
+            </div>
+          </div>
+          <div class="promo">
+            <p>-30% sur toutes les préstations et tous les achats</p>
+          </div>
+          <div>
+            <p>* Cette offre n'est valable que pour les réservations en ligne. L'achat de produits du salon avec cette offre est exclusivement liée à une prestation.</p>
+            <div>
+              <h3>Réserver en ligne n'a que des avantages </h3>
+              <ul>
+                <li>- Rapide</li>
+                <li>- Gratuit</li>
+                <li>- Pratique</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-content col-sm-8">
+          <div class="legend conf">
+            <p>Finalisez votre réservation chez Alexandre de Paris</p>
+            <p>pour le mercredi <u>10 avril 2015</u> à <u>10h30</u></p>
+            <p class='promo'>30% sur toutes les prestations</p>
+          </div>
+          <a href="#" class="pull-right">Modifier ma réservation</a>
+          <div class="clearfix"></div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-8 confirm-bloc-form">
+              <a href="#">Vous avez déjà un compte ? Cliquez ici</a> 
+              <div class="clearfix"></div>
+              <a href="#" class="facebook-connect">Connexion via Facebook</a> 
+              <div class="clearfix"></div>
+              <p class="center">Ou</p>
+              <div class="form-group">
+                <form action="submit" class='form-inline'>
+                  <label class='col-xs-12' for="infos">
+                    <span class="icon"></span>
+                    <select class="col-xs-3" id="gender">
+                      <option>Mme</option>
+                      <option>Mr</option>
+                    </select>
+                    <input type="text" name="prenom"  class='col-xs-4'/>
+                    <input type="text" name="nom"  class='col-xs-4'/>
+                  </label>
+                  <label class='col-xs-12' for="email">
+                    <span class="icon"></span>
+                    <input type="text" name="email" class='col-xs-12 pull-right'/>
+                  </label>
+                  <label class='col-xs-12' for="phone">
+                    <span class="icon"></span>
+                    <input type="text" name="telephone portable" class='col-xs-12 pull-right'/>
+                  </label>
+                  <label class='col-xs-12' for="discount">
+                    <p class="inline">Vous avez un code de fidélité ?</p>
+                    <span class="icon"></span>
+                    <input type="text" name="email" />
+                    <button type="submit" value="send" class='btn btn-input'>ok</button>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+            <label class='col-xs-12 center-block' for="cgu">
+                <input type="checkbox" name='cgu'/>
+                <span></span>
+                Je reconnais avoir prix connaissance des <a href="#">conditions générales d'utilisation</a> de hairfie.
+            </label>
+            <a href="#" class="btn btn-red">Terminer la réservation</a>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <footer class='visible-md visible-lg'>
+      <div class="container">
+        <a href="#" class="app-dl"></a>
+        <div class="row">
+          <ul class="footer-links col-md-8">
+            <li class="col-sm-2"><a href="#">À propos</a></li>
+            <li class="col-sm-2"><a href="#">Presse</a></li>
+            <li class="col-sm-2"><a href="#">Blog</a></li>
+            <li class="col-sm-4"><a href="#">Conditions Générales et Confidentialité</a></li>
+            <li class="col-sm-2"><a href="#" class="btn btn-red">Déclarez votre salon</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="hr col-sm-10 col-xs-10"></div>
+        </div>
+        <h4>Rejoignez-nous sur :</h4>
+        <div class="row">
+          <ul class="social-links col-md-4 col-sm-6">
+            <li><a href="#" class='icon'>b</a></li>
+            <li><a href="#" class='icon'>a</a></li>
+            <li><a href="#" class='icon'>c</a></li>
+            <li><a href="#" class='icon'>x</a></li>
+            <li><a href="#" class='icon'>d</a></li>
+          </ul>
+        </div>
+        <p>© Hairfie, Inc.</p> 
+      </div>
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+        <!-- build:js scripts/main.js -->
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/hello.js"></script>
+        <!-- endbuild -->
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $('.like-btn').on('click',function(){
+          $('.glyphicon-heart').toggleClass('full');
+        });
+      });
+    </script>
+        <!-- build:js scripts/vendor/bootstrap.js 
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+         endbuild -->
+</body>
+</html>

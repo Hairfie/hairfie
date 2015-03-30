@@ -78,6 +78,7 @@
 				}
 			}
 		}
+		
 		.row {
 			> div {
 				h2 {
@@ -135,5 +136,129 @@
 				}
 			}
 		}
+		
+	}
+}
+#content.reservation.confirmation {
+
+	color: #848b95;
+	hr {border-color: #9a9a9a;}
+	.legend.conf {
+		p {
+			margin-bottom: 10px;
+			&:first-child {
+				color: @red;
+			}
+		}
+		.promo {
+			border: 0; 
+			color: @promo-color;
+			padding-left: 0;
+		}
+	}
+	p, a, label {font-size: 1.4em;}
+	.legend.conf + a {
+		text-decoration: underline;
+		margin-top: -2em;
+		&:hover, &:active {color: #848b95}
+	}
+	.confirm-bloc-form {
+		float: none;
+		margin: 0 auto;
+		a:first-child {
+			text-decoration: underline;
+			&:hover, &:active {color: #848b95}
+		}
+		a.facebook-connect {
+			width: 100%;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			font-weight: @light;
+			text-align: center;
+			color: white;
+			font-size: 1.4em;
+			margin-top: 20px;
+			#gradient.vertical(#5973aa; #425f9c;);
+			&:hover, &:active {text-decoration: none;}
+		}
+		p.center {
+			text-align: center;
+			line-height: 45px;
+		}
+		form {
+			label {
+				width: 100%;
+				padding-left: 40px;
+				.icon {
+					background: url(../images/icon-resa-user.png) no-repeat center left;
+					width: 16px;height: 16px;display: inline-block; 
+					position: absolute; left: 0; top: 3px;
+				}
+				input {
+
+				}
+				&[for="infos"] {
+					select {margin-right: 15px;}
+					input {
+						margin-right: 15px;
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+				&[for='email'] {
+					.icon {
+						background:url(../images/icon-resa-mail.png) no-repeat center left;
+						width: 17px;
+					}
+				}
+				&[for='phone'] {
+					.icon {
+						background:url(../images/icon-resa-phone.png) no-repeat center left;
+						width: 17px;
+					}
+				}
+				&[for='discount'] {
+					padding-left: 0;
+					.icon {
+						display: none;	
+					}
+					p.inline {display: inline-block;width: auto;font-size: 1em;}
+					input {width: 60%;}
+					button {
+						position: absolute; right: 0;top: 0;
+					}
+				}
+
+			}
+		}
+
+	}
+	label[for='cgu'] {
+		display: block;
+		float:none;
+		font-weight: @light;
+		a {
+			font-size: 1em;
+			color: #848b95;
+		}
+		input[type="checkbox"] + span {padding-left: 20px;}
+		input[type="checkbox"]:not(:checked) + span:before, input[type="checkbox"]:checked + span:before {
+			left: -10px; top: 0;
+		}
+	}
+	.btn-red {
+		display: block;
+		margin: 50px auto;
+		border-radius: 5px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 325px;
+		font-size: 1.9em;
+		height: 55px; 
+		line-height: 40px;
+		font-weight: @semiBold;
+		.box-shadow(0 1px 5px rgba(0,0,0,0.2));
 	}
 }
