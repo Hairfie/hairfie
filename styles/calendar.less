@@ -117,7 +117,10 @@
     border-top: 2px solid @border-color;
     border-left: 2px solid @border-color;
     .transition(all 0.1s ease-in-out);
-
+    @media screen and (max-width: @screen-sm-max) {
+      line-height: 40px;
+      height: 40px;
+    }
     a {
       clear: both;
       display: block;
@@ -134,6 +137,20 @@
         height: .938em;
         line-height: .938em;
         color: @promo-color;
+        @media screen and (max-width: @screen-md-max) {
+          bottom: -2px;
+        }
+        @media screen and (max-width: @screen-sm-max) {
+          bottom: -11px;
+        }
+
+      }
+      @media screen and (max-width: @screen-md-max) {
+        line-height: 40px;
+      }
+      @media screen and (max-width: @screen-sm-max) {
+        line-height: 20px ;
+        height: 20px;
       }
     }
 

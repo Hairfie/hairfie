@@ -6235,6 +6235,12 @@ span.arrow-right {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
 }
+@media screen and (max-width: 991px) {
+  .cal td {
+    line-height: 40px;
+    height: 40px;
+  }
+}
 .cal td a {
   clear: both;
   display: block;
@@ -6254,6 +6260,27 @@ span.arrow-right {
   height: .938em;
   line-height: .938em;
   color: #f39c12;
+}
+@media screen and (max-width: 1199px) {
+  .cal td a .promo-day {
+    bottom: -2px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cal td a .promo-day {
+    bottom: -11px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cal td a {
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cal td a {
+    line-height: 20px ;
+    height: 20px;
+  }
 }
 .cal td.off {
   background: #f3f3f3;
@@ -9188,17 +9215,34 @@ section.home-footer .row > div p {
   background: white;
   padding: 20px;
 }
+@media screen and (max-width: 991px) {
+  #content.reservation .sidebar {
+    margin-bottom: 40px;
+  }
+}
 #content.reservation .sidebar .salon-bloc a:first-child {
   display: block;
   width: 100%;
   max-height: 185px;
   overflow: hidden;
 }
+@media screen and (max-width: 991px) {
+  #content.reservation .sidebar .salon-bloc a:first-child {
+    max-height: 255px;
+  }
+}
 #content.reservation .sidebar .salon-bloc a:first-child img {
   max-height: 185px;
   width: auto;
   min-width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  #content.reservation .sidebar .salon-bloc a:first-child img {
+    max-height: 255px;
+    min-width: auto;
+    height: 100%;
+  }
 }
 #content.reservation .sidebar .salon-bloc .address-bloc {
   margin-top: 20px;
@@ -9237,6 +9281,11 @@ section.home-footer .row > div p {
 #content.reservation .main-content {
   padding-left: 30px;
 }
+@media screen and (max-width: 1199px) {
+  #content.reservation .main-content {
+    padding-left: 15px;
+  }
+}
 #content.reservation .main-content .legend {
   color: #848b95;
   font-weight: 400;
@@ -9273,15 +9322,40 @@ section.home-footer .row > div p {
   padding-left: 62px;
   padding-right: 0;
 }
-#content.reservation .main-content .row > div:nth-child(2) table {
+@media screen and (max-width: 1199px) {
+  #content.reservation .main-content .row > div:nth-child(2) {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #content.reservation .main-content .row > div:nth-child(2) {
+    margin-right: -50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content.reservation .main-content .row > div:nth-child(2) {
+    padding-left: 15px;
+  }
+}
+#content.reservation .main-content .row > div:nth-child(2) .time-table table {
   width: 100%;
 }
-#content.reservation .main-content .row > div:nth-child(2) table tbody {
+@media screen and (max-width: 991px) {
+  #content.reservation .main-content .row > div:nth-child(2) .time-table table {
+    margin-right: -50px;
+  }
+}
+#content.reservation .main-content .row > div:nth-child(2) .time-table table tbody {
   display: block;
   margin-right: -10px;
   border: none;
 }
-#content.reservation .main-content .row > div:nth-child(2) table td {
+@media screen and (max-width: 991px) {
+  #content.reservation .main-content .row > div:nth-child(2) .time-table table tbody {
+    margin-right: -50px;
+  }
+}
+#content.reservation .main-content .row > div:nth-child(2) .time-table table td {
   height: 54px;
   width: 74px;
   position: relative;
@@ -9291,18 +9365,29 @@ section.home-footer .row > div p {
   border-radius: 2px;
   text-align: center;
   margin: 3px;
+  margin-left: 0;
 }
-#content.reservation .main-content .row > div:nth-child(2) table td a {
+#content.reservation .main-content .row > div:nth-child(2) .time-table table td a {
   position: relative;
   line-height: 1.2;
 }
-#content.reservation .main-content .row > div:nth-child(2) table td p {
+@media screen and (max-width: 1199px) {
+  #content.reservation .main-content .row > div:nth-child(2) .time-table table td a span {
+    bottom: 2px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #content.reservation .main-content .row > div:nth-child(2) .time-table table td a span {
+    bottom: -28px;
+  }
+}
+#content.reservation .main-content .row > div:nth-child(2) .time-table table td p {
   position: absolute;
   top: 6px;
   width: 100%;
   font-size: 1em;
 }
-#content.reservation .main-content .row > div:nth-child(2) table td.disabled {
+#content.reservation .main-content .row > div:nth-child(2) .time-table table td.disabled {
   background: #efeff0;
   border-color: #efeff0;
   cursor: not-allowed;

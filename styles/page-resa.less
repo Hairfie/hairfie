@@ -8,17 +8,27 @@
 	.sidebar {
 		background: white;
 		padding: 20px;
+		@media screen and (max-width: @screen-sm-max) {
+			margin-bottom: 40px;
+		}
 		.salon-bloc {
 			a:first-child {
 				display: block;
 				width: 100%;
 				max-height: 185px;
 				overflow: hidden; 
-
+				@media screen and (max-width: @screen-sm-max) {
+  					max-height: 255px;
+				}
 				img {
 					max-height: 185px;
 					width: auto; min-width: 100%;
 					margin: 0 auto;
+					@media screen and (max-width: @screen-sm-max) {
+						max-height: 255px;
+						min-width: auto;
+						height: 100%;
+					}
 				}
 			}
 			.address-bloc {margin-top: 20px;}
@@ -57,6 +67,9 @@
 	}
 	.main-content {
 		padding-left: 30px;
+		@media screen and (max-width: @screen-md-max) {
+			padding-left: 15px;
+		}
 		.legend {
 			color: @font-color;
 			font-weight: @regular;
@@ -95,12 +108,27 @@
 			> div:nth-child(2) {
 				padding-left: 62px;
 				padding-right: 0;
-				table {
+				@media screen and (max-width: @screen-md-max) {
+					padding-left: 0px;
+				}
+				@media screen and (max-width: @screen-sm-max) {
+					margin-right: -50px;
+				}
+				@media screen and (max-width: @screen-xs-max) {
+					padding-left: 15px;
+				}
+				.time-table table {
 					width: 100%;
+					@media screen and (max-width: @screen-sm-max) {
+						margin-right: -50px;
+					}
 					tbody {
 						display: block;
   						margin-right: -10px;
   						border: none; 
+  						@media screen and (max-width: @screen-sm-max) {
+							margin-right: -50px;
+						}
 					}
 
 					td {
@@ -112,11 +140,19 @@
 						border:1px solid #e9e9e9;
 						border-radius: 2px;
 						text-align: center;
-						margin: 3px;
+						margin: 3px; margin-left: 0;
 
 						a {
 							position: relative;
 							line-height: 1.2;
+							span {
+      							@media screen and (max-width: @screen-md-max) {
+      								bottom: 2px;								
+								}
+								@media screen and (max-width: @screen-sm-max) {
+      								bottom: -28px;								
+								}
+							}
 						}
 
 						p {
