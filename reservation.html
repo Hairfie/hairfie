@@ -19,7 +19,7 @@
   <body>
 
     <div class="container">
-      <header class="white">
+      <header class="white hidden-xs hidden-sm">
           <div class="row">
             <div class="col-md-12">
               <a href="index.html" class="logo col-md-4"></a>
@@ -59,6 +59,25 @@
             </div>
           </div>
       </header>    
+    </div>
+
+    <div class="mobile-nav visible-sm visible-xs ">
+      <header class="container" style="margin-left:0;">
+          <a href="index.html" class="logo col-xs-4"></a>
+          <a href="#" class="col-xs-4 menu-trigger pull-right"></a>
+      </header>  
+      <div class="mobile-menu">
+        <div class="container">
+          <h2>Réservez votre coiffeur</h2>
+          <span class="hr"></span>
+          <div class="searchbar col-xs-10">
+            <input class='col-xs-12'type=search name=s placeholder='Où ?' >
+            <input class='col-xs-12'type=search name=s placeholder='Nom, spécialité...' >
+            <input type=date class='col-xs-12'/>
+            <a href="#" class='btn btn-red col-xs-12'>Lancer la recherche</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container reservation" id="content" >
@@ -247,7 +266,16 @@
         <p>© Hairfie, Inc.</p> 
       </div>
     </footer>
-
+    <footer class="visible-xs visible-sm mobile">
+      <div class="row">
+        <div class="col-xs-6 pull-left">
+          <a href="#" class="btn btn-red">Déclarez votre salon</a>
+        </div>
+        <div class="col-xs-6 pull-right">
+          <a href="#" class="app-dl"></a>
+        </div>
+      </div>
+    </footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -276,6 +304,17 @@
       $(document).ready(function(){
         $('.like-btn').on('click',function(){
           $('.glyphicon-heart').toggleClass('full');
+        });
+        $('body').on("click",'.mobile-nav .menu-trigger',function(){
+          if( $('.mobile-menu').height() == 0 ) {
+            $('.menu-trigger').addClass('close');
+            $('body').toggleClass('locked');
+            TweenMax.to('.mobile-menu', 0.4, {height:'100vh',ease:Power2.easeInOut});
+          } else {
+            $('.menu-trigger').removeClass('close');
+            $('body').toggleClass('locked');
+            TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
+          }
         });
       });
     </script>
