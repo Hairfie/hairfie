@@ -7410,7 +7410,7 @@ footer.mobile {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
-  padding-bottom: 85px;
+  /* padding-bottom: 85px; */
 }
 footer.mobile .btn-red {
   font-size: 1.42em;

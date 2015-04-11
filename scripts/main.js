@@ -9,10 +9,12 @@ TweenMax.set('.hairfie-singleView .related-hairfies', {marginTop:20,opacity:0});
 function setMobileSize() {
 
     var winW = $(window).width() + 'px';
-    TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+    TweenMax.set('body, body > div, body > section, body > footer', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+    // TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section, body > footer, body > .container', {width:winW,maxWidth:winW,overflowX:'hidden'});	
 
     $(window).resize(function(){
-    	TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+    	TweenMax.set('body, body > div, body > section, body > footer', {width:winW,maxWidth:winW,overflowX:'hidden'});	
+    	// TweenMax.set('body, body > #content, body > .mobile-nav, body > header, body > section, body > footer, body > .container', {width:winW,maxWidth:winW,overflowX:'hidden'});	
     });
 
 }
