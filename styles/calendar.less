@@ -157,8 +157,8 @@
     &.off { background: #f3f3f3; }
 
     &.off a { color: #dbdddf; }
-
-    &.active {
+    
+    &.active, &:active {
       background-color: @red !important;
       line-height: 2.2em;
       a {
@@ -173,6 +173,10 @@
         //   position: absolute;
         //   bottom: 5px; left: 15%;
         // }
+        .promo-day {
+          color: white;
+          opacity: .6;
+        }
       }
     }
     &:hover {

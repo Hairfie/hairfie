@@ -674,6 +674,12 @@
             TweenMax.to('.mobile-menu', 0.4, {height:0,ease:Power2.easeOut});
           }
         });
+
+        $('body').on('click', '.calendar td a', function(e) {
+          e.preventDefault();
+          $('.calendar td').removeClass('active');
+          $(this).parent('td').addClass('active');
+        });
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 

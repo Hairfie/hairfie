@@ -6288,13 +6288,20 @@ span.arrow-right {
 .cal td.off a {
   color: #dbdddf;
 }
-.cal td.active {
+.cal td.active,
+.cal td:active {
   background-color: #fc5a5f !important;
   line-height: 2.2em;
 }
-.cal td.active a {
+.cal td.active a,
+.cal td:active a {
   color: white;
   position: relative;
+}
+.cal td.active a .promo-day,
+.cal td:active a .promo-day {
+  color: white;
+  opacity: .6;
 }
 .cal td:hover {
   background-color: #e5e5e5;
@@ -7410,7 +7417,7 @@ footer.mobile {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
-  /* padding-bottom: 85px; */
+  padding-bottom: 85px;
 }
 footer.mobile .btn-red {
   font-size: 1.42em;
