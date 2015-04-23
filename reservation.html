@@ -321,6 +321,11 @@
           $('.calendar td').removeClass('active');
           $(this).parent('td').addClass('active');
         });
+        $('body').on('click', '.time-table td a', function(e) {
+          e.preventDefault();
+          $('.time-table td').removeClass('active');
+          $(this).parent('td').addClass('active');
+        });
       });
     </script>
         <!-- build:js scripts/vendor/bootstrap.js 

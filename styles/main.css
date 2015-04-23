@@ -6348,6 +6348,8 @@ body {
 }
 body.locked {
   overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 h1 {
   font-family: 'Lato', sans-serif;
