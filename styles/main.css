@@ -1691,7 +1691,7 @@ textarea.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -6802,6 +6802,8 @@ input[type="checkbox"]:not(:checked),
 input[type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
+  z-index: 99999;
+  width: 100%;
 }
 input[type="checkbox"] + span {
   position: relative;
@@ -9609,6 +9611,23 @@ section.home-footer .row > div p {
   #content.reservation.confirmation label[for='cgu'] {
     padding-left: 30px;
   }
+}
+#content.reservation.confirmation label[for='cgu'] span {
+  width: 17px;
+  height: 17px;
+  padding-left: 0;
+  padding-right: 30px;
+  display: inline-block;
+}
+#content.reservation.confirmation label[for='cgu'] span:before {
+  width: 17px;
+  height: 17px;
+  left: 0;
+}
+#content.reservation.confirmation label[for='cgu'] span:after {
+  width: 17px;
+  height: 17px;
+  left: 1px;
 }
 #content.reservation.confirmation .btn-red {
   display: block;

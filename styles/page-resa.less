@@ -306,11 +306,24 @@
 		@media screen and (max-width: @screen-xs-max) {
 			padding-left: 30px;
 		}
-		// input[type="checkbox"] + span {padding-left: 20px;}
-		// input[type="checkbox"]:not(:checked) + span:before, 
-		// input[type="checkbox"]:checked + span:before {
-		// 	left: -10px; top: 0;
-		// }
+		span {
+			width: 17px;
+			height: 17px;
+			padding-left: 0;
+			padding-right: 30px;
+			display: inline-block;
+
+			&:before {
+				width: 17px;
+				height: 17px;
+				left: 0;
+			}
+			&:after {
+				width: 17px;
+				height: 17px;
+				left:1px;
+			}
+		}
 	}
 	.btn-red {
 		display: block;
