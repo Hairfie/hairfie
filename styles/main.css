@@ -6804,6 +6804,7 @@ input[type="checkbox"]:not(:checked),
 input[type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
+  z-index: 9999;
 }
 input[type="checkbox"] + span {
   position: relative;
@@ -9632,6 +9633,15 @@ section.home-footer .row > div p {
   #content.reservation.confirmation label[for='cgu'] {
     padding-left: 30px;
   }
+}
+#content.reservation.confirmation label[for='cgu'] input[type="checkbox"] {
+  left: 0;
+  margin-left: 20px;
+  opacity: 0;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  top: -1px;
 }
 #content.reservation.confirmation label[for='cgu'] span {
   width: 17px;
