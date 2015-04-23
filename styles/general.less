@@ -680,3 +680,27 @@ input[type="checkbox"].checkbox-disabled:not(:checked) + span:after, input[type=
 		display: block !important;
 	}
 }
+div.pagination {
+	font-size: 1.4em;
+	position: relative;width: 100%;
+	ul {
+		position: absolute; left: 50%;margin-left: -90px;
+		li {
+			padding: 0;
+		}
+	}
+	a {
+		padding: .15em .55em;
+		color: @darkgrey;
+		font-weight: @semiBold;
+		&.active {
+			color: white;
+			background-color: @red;
+			border-radius: 100%;
+
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
