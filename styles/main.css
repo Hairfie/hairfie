@@ -1691,7 +1691,7 @@ textarea.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
-  /* margin-left: -20px; */
+  margin-left: -20px;
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -6802,8 +6802,6 @@ input[type="checkbox"]:not(:checked),
 input[type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
-  z-index: 99999;
-  width: 100%;
 }
 input[type="checkbox"] + span {
   position: relative;
@@ -7990,11 +7988,6 @@ section.home-footer .row > div p {
   top: 0;
   background: #f4f4f4;
   z-index: -1;
-}
-@media screen and (max-width: 767px) {
-  #content.search .main-content .search-content {
-    padding-bottom: 65px;
-  }
 }
 #content.search .main-content .header-part .cover {
   border-radius: 3px;
