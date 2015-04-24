@@ -6136,6 +6136,11 @@ span.arrow-right {
   background: #343434;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .cal caption {
+    max-width: 350px;
+  }
+}
 .cal caption a {
   display: block;
   line-height: 4.2em;
