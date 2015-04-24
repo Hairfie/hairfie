@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap-datepicker.standalone.min.css">
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -71,7 +73,7 @@
               <div class="searchbar col-xs-10">
                 <input class='col-xs-12'type=search name=s placeholder='Où ?' autocomplete="off">
                 <input class='col-xs-12'type=search name=s placeholder='Nom, spécialité...' autocomplete="off">
-                <input type=date class='col-xs-12'/>
+                <input class="datepicker col-xs-12" data-date-format="dd/mm/yyyy" placeholder="jj/mm/aaaa">
                 <a href="#" class='btn btn-red col-xs-12'>Lancer la recherche</a>
               </div>
             </div>
@@ -92,7 +94,7 @@
               <input class='col-xs-6'type=search name=s placeholder='Nom, spécialité...' >
             </div>
             <div class="col-sm-6">
-              <input type=date class='col-xs-6'/>
+              <input class="datepicker col-xs-6" data-date-format="mm/dd/yyyy" placeholder="jj/mm/aaaa">
               <a href="#" class='btn btn-red col-xs-6'>Trouvez votre coiffeur</a>
             </div>
             <div class="search-bar-extra">
@@ -416,6 +418,7 @@
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="scripts/bootstrap-datepicker.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
@@ -425,7 +428,7 @@
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               setMobileSize();
             }
-            
+            $('.datepicker').datepicker();
 
             TweenMax.to('.landing header.hidden-xs', 1, {
               opacity:1,
@@ -456,7 +459,7 @@
               }
             });
 
-            $('body').on('click','.main-searchbar input', function(){
+            $('body').on('click','.main-searchbar input[type="search"]', function(){
               $('.main-searchbar').toggleClass('open');
             });
 
