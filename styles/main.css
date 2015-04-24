@@ -6331,6 +6331,19 @@ span.arrow-right {
   border-bottom: 0;
   margin-bottom: 0;
 }
+.datepicker-dropdown {
+  border-radius: 0px !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+  color: #595959;
+}
+.datepicker-dropdown table tr td.day.active {
+  background-color: #fc5a5f;
+  border-radius: 15%;
+}
+.datepicker-dropdown table tr td.day.active:hover {
+  background-color: #fb0f16;
+}
 /*////////////////////////////////
 	 G E N E R A L  S T Y L E 
 ////////////////////////////////*/
